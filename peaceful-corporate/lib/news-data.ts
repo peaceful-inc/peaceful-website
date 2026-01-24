@@ -121,4 +121,63 @@ export const newsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "8",
+    title: "【2/13開催】異業種に学ぶこれからの医療 - 医療経営×データの実装論",
+    titleEn: "[Event] 2/13 Seminar: The Future of Healthcare Management & Data Implementation",
+    date: "2026.01.24",
+    category: "Event",
+    content: `
+      <p class="mb-8">
+        <img src="/images/news/news-event-20260213.png" alt="2/13 Event Flyer" class="w-full h-auto rounded-lg shadow-lg border border-gray-800" />
+      </p>
+      <p class="mb-6">
+        2026年2月13日（金）、医療の構造改革に挑む3名の専門家をお招きし、トークイベントを開催いたします。<br>
+        テーマは「医療経営とデータの実装」。精神論ではなく、「経営科学」と「データガバナンス」の視点から、持続可能な医療システムのあり方を議論します。
+      </p>
+      <h3 class="text-xl font-bold mb-4 text-white">登壇者</h3>
+      <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-300">
+        <li>蔭山 裕之 氏 (湖南メディカルコンソーシアム理事 / アメーバ経営の実践者)</li>
+        <li>岡田 美保子 氏 (IDIAL代表理事 / 医療データガバナンスの専門家)</li>
+        <li>杉村 和宣 氏 (総合高津中央病院 理事長補佐 / 元戦略コンサルタント)</li>
+      </ul>
+      <p class="mb-6">
+        <span class="font-bold text-white">Facilitator:</span> 陣之内 将成 (株式会社peaceful 代表)
+      </p>
+      <p class="mb-6">
+        <span class="font-bold text-white">日時・場所:</span> 2月13日 19:00-21:00 @ UN:O Otemachi
+      </p>
+      <p class="mt-8">
+        <a href="https://forms.gle/wQN5af6navvZTjvc8" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼参加申し込みはこちら
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-8">
+        <img src="/images/news/news-event-20260213.png" alt="2/13 Event Flyer" class="w-full h-auto rounded-lg shadow-lg border border-gray-800" />
+      </p>
+      <p class="mb-6">
+        We are hosting a special seminar on February 13th, inviting three experts challenging the structural reform of healthcare.<br>
+        Moving beyond theory, we will discuss 'Management Science' and 'Data Governance' to build sustainable medical infrastructure.
+      </p>
+      <h3 class="text-xl font-bold mb-4 text-white">Speakers</h3>
+      <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-300">
+        <li>Hiroyuki Kageyama (Director, Konan Medical Consortium / Amoeba Management Expert)</li>
+        <li>Mihoko Okada (Representative Director, IDIAL / Medical Data Governance Specialist)</li>
+        <li>Kazunobu Sugimura (Advisor, Takatsu General Hospital / Ex-Strategy Consultant)</li>
+      </ul>
+      <p class="mb-6">
+        <span class="font-bold text-white">Facilitator:</span> Masanari Jinnouchi (CEO, peaceful Inc.)
+      </p>
+      <p class="mb-6">
+        <span class="font-bold text-white">Date & Venue:</span> Feb 13, 19:00-21:00 @ UN:O Otemachi
+      </p>
+      <p class="mt-8">
+        <a href="https://forms.gle/wQN5af6navvZTjvc8" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼Registration
+        </a>
+      </p>
+    `,
+  },
 ];
