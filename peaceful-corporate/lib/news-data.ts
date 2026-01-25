@@ -8,7 +8,7 @@ export interface NewsItem {
   contentEn: string;
 }
 
-export const newsData: NewsItem[] = [
+const rawNewsData: NewsItem[] = [
   {
     id: "1",
     title: "株式会社peaceful 設立",
@@ -181,3 +181,5 @@ export const newsData: NewsItem[] = [
     `,
   },
 ];
+
+export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
