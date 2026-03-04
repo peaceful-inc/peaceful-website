@@ -127,7 +127,7 @@ export default function ProductContent() {
             }`}
         >
           <div className="w-full max-w-3xl relative aspect-video mt-4 mb-2 rounded-xl overflow-hidden border border-neon-blue/20 shadow-[0_0_30px_rgba(96,165,250,0.1)]">
-            <iframe src="https://www.youtube.com/embed/LwRxlmNrVsI?si=Yogf280wVeGlyJHA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="absolute top-0 left-0 w-full h-full"></iframe>
+            <iframe src="https://www.youtube.com/embed/LwRxlmNrVsI?si=Yogf280wVeGlyJHA&autoplay=1&mute=1&loop=1&playlist=LwRxlmNrVsI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="absolute top-0 left-0 w-full h-full"></iframe>
           </div>
           <p className="text-xs text-foreground/60 mt-2">モデル: 胡桃あやか様@sllow</p>
         </section>
