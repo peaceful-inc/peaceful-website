@@ -120,6 +120,17 @@ export default function ProductContent() {
               : 'The world\'s only FPP data collected by NURVIS will serve as the foundation for the physical AI (nursing humanoids) we are developing. Your work today nurtures your best partner of tomorrow. peaceful is the first partner to realize that future.'}
           </p>
         </section>
+
+        {/* Video Section */}
+        <section
+          className={`transition-all duration-1000 delay-[900ms] w-full flex flex-col items-center ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+            }`}
+        >
+          <div className="w-full max-w-3xl relative aspect-video mt-4 mb-2 rounded-xl overflow-hidden border border-neon-blue/20 shadow-[0_0_30px_rgba(96,165,250,0.1)]">
+            <iframe src="https://www.youtube.com/embed/LwRxlmNrVsI?si=Yogf280wVeGlyJHA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen className="absolute top-0 left-0 w-full h-full"></iframe>
+          </div>
+          <p className="text-xs text-foreground/60 mt-2">モデル: 胡桃あやか様@sllow</p>
+        </section>
       </div>
     </div>
   )
