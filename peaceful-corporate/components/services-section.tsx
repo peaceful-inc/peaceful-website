@@ -89,7 +89,7 @@ export default function ServicesSection() {
                             <h3 className="mb-4 text-3xl font-bold text-neon-blue group-hover:text-white transition-colors">Giga-Hospital</h3>
                             <p className="mb-6 text-lg leading-relaxed text-foreground/80">
                                 {lang === 'ja'
-                                    ? '自己進化する医療エコシステム。街全体を一つの生命体として見立て、予防から予後までをシームレスに繋ぐ。'
+                                    ? '街全体を、ひとつの巨大な病院へ。ひとつの箱に集中させすぎた医療機能を街全体に溶かし込み、届け方を変える。'
                                     : 'Self-evolving healthcare ecosystem. Viewing the entire city as a single living organism, seamlessly connecting everything from prevention to prognosis.'}
                             </p>
                         </div>
