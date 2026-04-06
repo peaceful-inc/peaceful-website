@@ -25,7 +25,7 @@ export default function GigaHospitalContent() {
               : "none",
           }}
         >
-          {lang === 'ja' ? '街全体を、ひとつの巨大な病院へ。' : 'Turning the Entire City into a Giant Hospital.'}
+          {lang === 'ja' ? 'GIGA-HOSPITAL構想 — 街全体を、ひとつの巨大な病院へ。' : 'GIGA-HOSPITAL — Transforming an Entire City into One Giant Hospital.'}
         </h1>
       </div>
 
@@ -38,7 +38,7 @@ export default function GigaHospitalContent() {
         >
           <div className="mb-8 flex items-baseline gap-4 border-b border-neon-blue/20 pb-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === 'ja' ? 'なぜ今、医療の「かたち」を変えるのか' : 'Why Change the "Shape" of Healthcare Now?'}
+              {lang === 'ja' ? 'なぜ今、医療の「かたち」を変えるのか' : 'Why Reshape the "Form" of Healthcare Now?'}
             </h2>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-foreground/90 md:text-xl md:leading-loose">
@@ -65,7 +65,27 @@ export default function GigaHospitalContent() {
                 <p>問題の本質は明快です。ひとつの箱に集中させすぎた医療機能を、街全体に溶かし込む。機能は残し、届け方を変える。それが私たちの答え、<strong className="text-neon-blue">GIGA-HOSPITAL構想</strong>です。</p>
               </>
             ) : (
-              <p>English content to be added.</p>
+              <>
+                <p>Japan&apos;s hospitals will inevitably decline in number.</p>
+                <ul className="space-y-4 pl-2 sm:pl-6 bg-card/30 p-6 rounded-lg border border-neon-blue/10">
+                  <li className="flex items-start">
+                    <span className="mr-3 text-neon-blue">•</span>
+                    <span><strong>The 2040 Problem:</strong> The elderly population will peak while the working-age population continues to shrink.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3 text-neon-blue">•</span>
+                    <span><strong>A Workforce Crisis:</strong> The job-to-applicant ratio for nurses already exceeds 2.5x. Demand for healthcare is rising faster than the people available to provide it.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3 text-neon-blue">•</span>
+                    <span><strong>A National Pivot:</strong> In 2026, the government mandated the consolidation of acute-care hospitals (one per 200,000-300,000 people) and eased staffing requirements through technology adoption.</span>
+                  </li>
+                </ul>
+                <p>The model of building and maintaining massive hospital buildings has reached its economic and human limits. In some regions, large-scale hospital restructuring and cross-institutional collaboration are already underway. This is not a passing trend. It is an irreversible structural shift.</p>
+                <p>However, fewer hospitals does not have to mean less healthcare.</p>
+                <p>Remote villages, islands, mountainous regions -- healthcare must reach every place where people live. This is not only a matter of health policy but a geopolitical imperative for maintaining the nation&apos;s territory. Land where people cannot live ceases to function as national territory. Regions without healthcare quietly disappear.</p>
+                <p>The core of the problem is clear: medical functions concentrated in a single building must be dissolved into the fabric of the city itself. Preserve the function. Change the delivery. That is our answer -- the <strong className="text-neon-blue">GIGA-HOSPITAL</strong> vision.</p>
+              </>
             )}
           </div>
         </section>
@@ -77,7 +97,7 @@ export default function GigaHospitalContent() {
         >
           <div className="mb-8 flex items-baseline gap-4 border-b border-neon-blue/20 pb-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === 'ja' ? '「リンパ節」型の分散医療ネットワーク' : 'Lymph Node-Type Distributed Healthcare Network'}
+              {lang === 'ja' ? '「リンパ節」型の分散医療ネットワーク' : 'A "Lymph Node" Model of Distributed Healthcare'}
             </h2>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-foreground/90 md:text-xl md:leading-loose">
@@ -99,7 +119,22 @@ export default function GigaHospitalContent() {
                 <p>これは単なる効率化の話ではありません。看護師が「看護が好きだから、看護を続けられる」環境をつくることです。記録に追われず、移動に消耗せず、患者と向き合う時間を最大化する。働き方が変われば、この職業の魅力そのものが変わります。</p>
               </>
             ) : (
-              <p>English content to be added.</p>
+              <>
+                <p>The human lymphatic system has no single, massive central organ. Instead, small lymph nodes are scattered throughout the body, each performing immune functions at its local post while connected through lymphatic vessels into one robust defense system.</p>
+                <p>GIGA-HOSPITAL implements this architecture in Japan&apos;s healthcare landscape.</p>
+                <ul className="space-y-4 pl-2 sm:pl-6 bg-card/30 p-6 rounded-lg border border-neon-blue/10">
+                  <li className="flex items-start">
+                    <span className="mr-3 text-neon-blue">•</span>
+                    <span><strong>Hub Hospitals (Central Organs):</strong> Consolidate only high-acuity functions -- operating theaters and ICUs -- where concentration improves quality.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-3 text-neon-blue">•</span>
+                    <span><strong>Healthcare Nodes (Lymph Nodes):</strong> Pharmacies, home-visit nursing stations, small clinics, care facilities, and patients&apos; own homes. Redefine these as distributed healthcare outposts woven into the city.</span>
+                  </li>
+                </ul>
+                <p>Pharmacies evolve from simple dispensaries into regional supply hubs for medical resources. Nurses head directly from home to their patients, picking up supplies at the hub instead of commuting to a station. The concept of commuting vanishes, and a new way of working emerges -- one focused entirely on care.</p>
+                <p>This is more than an efficiency play. It is about creating an environment where nurses can say, &quot;I love nursing, so I can keep nursing.&quot; Free from paperwork, free from exhausting commutes, maximizing time spent with patients. When the way of working changes, the appeal of the profession itself is transformed.</p>
+              </>
             )}
           </div>
         </section>
@@ -111,7 +146,7 @@ export default function GigaHospitalContent() {
         >
           <div className="mb-8 flex items-baseline gap-4 border-b border-neon-blue/20 pb-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === 'ja' ? '分散の「弱点」を、知能で克服する' : 'Overcoming Vulnerabilities with Intelligence'}
+              {lang === 'ja' ? '分散の「弱点」を、知能で克服する' : 'Overcoming the Weakness of Decentralization -- with Intelligence'}
             </h2>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-foreground/90 md:text-xl md:leading-loose">
@@ -123,7 +158,12 @@ export default function GigaHospitalContent() {
                 <p>物理的に分散しても、医療の質を落とさない。判断を孤立させない。どこにいても、まるで同じ病棟で働いているかのように、情報と知恵が行き渡る。その隙間を埋める「知能」がなければ、GIGA-HOSPITALはただの絵空事に終わります。</p>
               </>
             ) : (
-              <p>English content to be added.</p>
+              <>
+                <p>This distributed network, however, has a critical vulnerability. The moment nodes scatter, the &quot;gaps&quot; between them become voids.</p>
+                <p>In a hospital, you could walk down the hall and consult a veteran. There were shift handoffs at the nurse station. Monitor alarms flagged anomalies. But in a distributed world, a nurse visits alone, decides alone, and returns alone.</p>
+                <p>Lymph nodes function because they are connected by lymphatic vessels.</p>
+                <p>Even when physically dispersed, the quality of care must not decline. Clinical judgment must not be isolated. Wherever a nurse is, information and wisdom must flow as if everyone were working on the same ward. Without &quot;intelligence&quot; to bridge these gaps, GIGA-HOSPITAL remains nothing more than a sketch on paper.</p>
+              </>
             )}
           </div>
         </section>
@@ -155,7 +195,9 @@ export default function GigaHospitalContent() {
               </>
             ) : (
               <>
-                <p>English content to be added.</p>
+                <p>peaceful exists to make this vision a reality.</p>
+                <p>Intelligence that seamlessly connects the gaps between distributed healthcare nodes. And, in time, technology that gives that intelligence a physical body -- delivering care to places and hours that human hands cannot reach. Opening the healthcare that was locked inside hospital walls to the entire city. We build the foundational technology that makes this possible.</p>
+                <p>As our first step, we are starting with NURVIS -- an AI agent for nurses.</p>
                 <div className="pt-6">
                   <Link
                     href="/product"
@@ -173,7 +215,7 @@ export default function GigaHospitalContent() {
         <div className={`mt-32 pb-20 w-full text-center transition-all duration-1000 delay-[1100ms] ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
           }`}>
           <p className="text-xl md:text-2xl lg:text-3xl font-medium tracking-wide italic text-neon-blue">
-            {lang === 'ja' ? '「病院を建てる時代から、医療を届ける時代へ。」' : '"From building hospitals, to delivering healthcare."'}
+            {lang === 'ja' ? '病院を建てる時代から、医療を届ける時代へ。' : 'From an era of building hospitals to an era of delivering healthcare.'}
           </p>
         </div>
 

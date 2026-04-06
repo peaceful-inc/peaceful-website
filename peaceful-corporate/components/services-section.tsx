@@ -90,7 +90,7 @@ export default function ServicesSection() {
                             <p className="mb-6 text-lg leading-relaxed text-foreground/80">
                                 {lang === 'ja'
                                     ? '街全体を、ひとつの巨大な病院へ。ひとつの箱に集中させすぎた医療機能を街全体に溶かし込み、届け方を変える。'
-                                    : 'Self-evolving healthcare ecosystem. Viewing the entire city as a single living organism, seamlessly connecting everything from prevention to prognosis.'}
+                                    : 'Transforming an entire city into one giant hospital. Dissolving medical functions from a single building into the fabric of the city, and changing the way healthcare is delivered.'}
                             </p>
                         </div>
                         <Link
