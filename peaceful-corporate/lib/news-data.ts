@@ -180,6 +180,33 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "9",
+    title: "DIA Global Forumに共著記事が掲載されました",
+    titleEn: "Co-authored Article Published in DIA Global Forum",
+    date: "2026.03.01",
+    category: "Media",
+    content: `
+      <p class="mb-6">
+        DIA（Drug Information Association）が発行する国際専門誌「DIA Global Forum」2026年3月号に、代表 陣之内の共著記事が掲載されました。アステラス製薬、東京医科大学、国立成育医療研究センター、Fortreaの研究者との共同執筆で、日本における産学連携オープンイノベーションの課題と実践について論じています。
+      </p>
+      <p class="mt-8">
+        <a href="https://globalforum.diaglobal.org/issue/march-2026/come-together-learn-co-create-and-close-the-innovation-gap-between-academic-and-industry-research-in-japan/" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼記事はこちら（英語）
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        A co-authored article by our CEO Jinnouchi was published in the March 2026 issue of the international journal "DIA Global Forum," issued by the DIA (Drug Information Association). Co-authored with researchers from Astellas Pharma, Tokyo Medical University, National Center for Child Health and Development, and Fortrea, the article discusses the challenges and practices of open innovation and industry-academia collaboration in Japan.
+      </p>
+      <p class="mt-8">
+        <a href="https://globalforum.diaglobal.org/issue/march-2026/come-together-learn-co-create-and-close-the-innovation-gap-between-academic-and-industry-research-in-japan/" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼Read the article (English)
+        </a>
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
