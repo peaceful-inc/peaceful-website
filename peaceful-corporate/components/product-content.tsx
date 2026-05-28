@@ -85,8 +85,8 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === 'ja'
-                  ? 'あなたの「気づき」や「判断プロセス」そのものを、独自のFPP（First Person Perspective）データとして収集・解析。'
-                  : 'Collecting and analyzing your "noticing" and "judgment processes" themselves as unique FPP (First Person Perspective) data.'}
+                  ? 'あなたの「気づき」や「判断プロセス」そのものを、独自のエゴセントリックデータ（Egocentric Data）として収集・解析。'
+                  : 'Collecting and analyzing your "noticing" and "judgment processes" themselves as unique Egocentric Data.'}
               </p>
             </div>
 
@@ -116,8 +116,8 @@ export default function ProductContent() {
           </div>
           <p className="text-lg leading-relaxed text-foreground/90 md:text-xl">
             {lang === 'ja'
-              ? 'NURVISが収集する世界唯一のFPPデータは、我々が開発するフィジカルAI（看護ヒューマノイド）の基盤となります。あなたの今日の仕事が、明日のあなたの最高のパートナーを育てる。peacefulは、その未来を実現する、最初のパートナーです。'
-              : 'The world\'s only FPP data collected by NURVIS will serve as the foundation for the physical AI (nursing humanoids) we are developing. Your work today nurtures your best partner of tomorrow. peaceful is the first partner to realize that future.'}
+              ? 'NURVISが収集する世界唯一のエゴセントリック看護データは、我々が開発するフィジカルAI（看護ヒューマノイド）の基盤となります。あなたの今日の仕事が、明日のあなたの最高のパートナーを育てる。peacefulは、その未来を実現する、最初のパートナーです。'
+              : 'The world\'s only Egocentric Nursing Data collected by NURVIS will serve as the foundation for the physical AI (nursing humanoids) we are developing. Your work today nurtures your best partner of tomorrow. peaceful is the first partner to realize that future.'}
           </p>
         </section>
 

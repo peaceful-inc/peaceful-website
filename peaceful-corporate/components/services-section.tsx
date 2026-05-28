@@ -67,7 +67,7 @@ export default function ServicesSection() {
                                 <ul className="list-disc list-inside text-foreground/80 space-y-1 mb-6">
                                     <li>Voice Logging: Zero-touch documentation via automated transcription & summarization.</li>
                                     <li>Operation Support: Hands-free protocol access and instant communication.</li>
-                                    <li>Behavior Analysis: Accelerating skill transfer by learning from expert nurses&apos; FPP data.</li>
+                                    <li>Behavior Analysis: Accelerating skill transfer by learning from expert nurses&apos; Egocentric Nursing Data.</li>
                                 </ul>
                             )}
                         </div>
