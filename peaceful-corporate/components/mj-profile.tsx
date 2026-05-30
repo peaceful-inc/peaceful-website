@@ -10,7 +10,6 @@ export default function MjProfile() {
   const profile = {
     name: lang === 'ja' ? '陣之内 将成' : 'Masanari Jinnouchi',
     title: lang === 'ja' ? '株式会社peaceful 代表取締役CEO' : 'CEO, peaceful inc.',
-    desc: lang === 'ja' ? '看護師＋臨床開発専門職 13年。NURVIS開発中。' : 'Nurse & Clinical Development Professional for 13 years. Currently developing NURVIS.',
   }
 
   return (
@@ -47,18 +46,20 @@ export default function MjProfile() {
       </div>
 
       {/* Profile Image */}
-      <div className="mb-6 rounded-full overflow-hidden w-36 h-36 border-4 border-[#008C8C]/20 shadow-md">
-        <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
-          <span className="text-sm">Photo</span>
-        </div>
+      <div className="mb-6 rounded-full overflow-hidden w-36 h-36 border-4 border-[#008C8C]/20 shadow-md relative bg-white">
+        <Image
+          src="/mj-profile.png"
+          alt={profile.name}
+          fill
+          className="object-cover"
+          sizes="144px"
+          priority
+        />
       </div>
 
       {/* Profile Info */}
       <h1 className="text-2xl font-bold mb-2 tracking-tight">{profile.name}</h1>
-      <h2 className="text-[15px] text-[#008C8C] font-medium mb-4">{profile.title}</h2>
-      <p className="text-sm text-center text-gray-600 mb-10 max-w-[280px] leading-relaxed">
-        {profile.desc}
-      </p>
+      <h2 className="text-[15px] text-[#008C8C] font-medium mb-10">{profile.title}</h2>
 
       {/* Links */}
       <div className="w-full max-w-[320px] flex flex-col gap-4">
