@@ -1,0 +1,129 @@
+import { Metadata } from "next"
+import Image from "next/image"
+
+export const metadata: Metadata = {
+  title: 'NURVIS プライバシーポリシー | peaceful inc.',
+}
+
+export default function NurvisPrivacyPage() {
+  return (
+    <div className="min-h-screen bg-[#FDFBF7] text-[#2D3436] flex flex-col items-center py-12 px-6 font-sans">
+      {/* Logo */}
+      <div className="mb-10 mt-8">
+        <a href="/" className="transition-opacity hover:opacity-80 block">
+          <Image
+            src="/logo.png"
+            alt="peaceful inc."
+            width={160}
+            height={44}
+            className="h-10 w-auto object-contain invert"
+            priority
+          />
+        </a>
+      </div>
+
+      {/* Content Container */}
+      <div className="w-full max-w-3xl bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100">
+        <h1 className="text-2xl md:text-3xl font-bold mb-8 tracking-tight text-center">NURVIS プライバシーポリシー</h1>
+        
+        <div className="space-y-6 text-[15px] leading-relaxed">
+          <p>
+            株式会社peaceful（以下「当社」）は、看護業務支援アプリケーション「NURVIS」（以下「本アプリ」）における情報の取扱いについて、以下のとおり定めます。
+          </p>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">1. 事業者情報</h2>
+            <p>
+              株式会社peaceful<br />
+              所在地：東京都練馬区小竹町1-39-2-103<br />
+              連絡先：masanari.jinnouchi@peaceful-inc.com
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">2. 本アプリの性格</h2>
+            <p>
+              本アプリは、医療機関に勤務する看護職が業務記録の作成等に用いる業務用アプリケーションであり、導入医療機関の管理下にある端末に限定して配信されます。一般消費者向けには提供していません。本アプリは、診断の確定や治療方針の決定を行うものではありません。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">3. 取得する情報と利用目的</h2>
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-bold mb-1">（1）マイクからの音声</h3>
+                <p>看護記録の作成支援およびAIへの質問入力のために使用します。音声はすべて端末内で文字に変換され、音声データそのものが当社のサーバーへ送信されることはありません。端末内の音声および変換直後のテキスト（生データ）は、24時間以内に自動削除されます。</p>
+              </div>
+              <div>
+                <h3 className="font-bold mb-1">（2）変換後テキスト</h3>
+                <p>文字変換後、端末内で個人を特定しうる情報（氏名・病室番号・電話番号・住所）を自動的に伏字化（マスキング）した上で、伏字化済みテキストのみを当社サーバーへ送信します。患者を特定できる情報（氏名・患者ID等）は、いかなる形式でも当社サーバーへ送信されません。サーバー上の記録は、個人と直接結びつかない識別子（record_id）のみで管理されます。</p>
+              </div>
+              <div>
+                <h3 className="font-bold mb-1">（3）利用者アカウント情報</h3>
+                <p>認証のためのログインID（メールアドレス）を使用します。本アプリの操作記録はログインIDに紐づけて記録され、導入医療機関における利用状況の確認および安全管理に用います。</p>
+              </div>
+              <div>
+                <h3 className="font-bold mb-1">（4）動作記録（ログ）</h3>
+                <p>システムの安全管理・障害対応のために取得します。</p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">4. 保存先と保存期間</h2>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>サーバーは Amazon Web Services 東京リージョン（日本国内）を使用し、国外への移転は行いません。</li>
+              <li>端末内の生データ（音声・伏字化前テキスト）は24時間で自動削除されます。</li>
+              <li>伏字化済みの記録は実証事業の期間中保持し、終了後は導入医療機関との契約に従い処理します。</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">5. 第三者提供</h2>
+            <p>
+              法令に基づく場合を除き、取得した情報を第三者に提供しません。広告目的での利用や第三者へのデータ提供・販売は行いません。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">6. トラッキング</h2>
+            <p>
+              本アプリは、他社のアプリやウェブサイトを横断して利用者を追跡すること（トラッキング）を行いません。広告識別子を使用しません。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">7. 安全管理措置</h2>
+            <p>
+              通信の暗号化（TLS 1.2以上）、保存データの暗号化、アクセス元の制限、アクセス権限の管理、操作ログの記録・監視を実施しています。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">8. お問い合わせ</h2>
+            <p>
+              本アプリで取り扱う情報に関するお問い合わせおよび開示等のご請求は、第1項の連絡先までご連絡ください。医療機関での利用に係る記録については、当該医療機関の定めに従い対応します。
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">9. 改定</h2>
+            <p>
+              本ポリシーを改定する場合は、本ページにて公表します。
+            </p>
+          </section>
+
+          <div className="mt-12 pt-8 text-right text-gray-600">
+            <p>制定日：2026年7月6日</p>
+            <p className="mt-1">株式会社peaceful</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="mt-12 pt-8 pb-4">
+        <p className="text-xs text-gray-400 font-medium">© peaceful inc.</p>
+      </div>
+    </div>
+  )
+}
