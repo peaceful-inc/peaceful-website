@@ -207,6 +207,33 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "10",
+    title: "寺田倉庫「Creation Camp TENNOZ」第3期に採択",
+    titleEn: "Selected for Warehouse TERRADA's 'Creation Camp TENNOZ' 3rd Batch",
+    date: "2026.07.17",
+    category: "Award",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、寺田倉庫株式会社が主催するシード期スタートアップ向けインキュベーションプログラム「Creation Camp TENNOZ」第3期に採択されました。約200件の応募の中から最終選考に進んだ26社によるピッチ審査を経て、10社の1社に選出されています。本プログラムを通じて、天王洲のインキュベーション施設を拠点に、看護師向けAIエージェント「NURVIS」の事業化を加速してまいります。
+      </p>
+      <p class="mt-8">
+        <a href="https://prtimes.jp/main/html/rd/p/000000477.000014158.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼プレスリリースはこちら
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful Inc. has been selected for the 3rd batch of "Creation Camp TENNOZ," an incubation program for seed-stage startups organized by Warehouse TERRADA. We were chosen as one of 10 companies after a pitch screening by 26 finalists out of approximately 200 applicants. Through this program, we will accelerate the commercialization of our AI agent for nurses, "NURVIS," based at the incubation facility in Tennoz.
+      </p>
+      <p class="mt-8">
+        <a href="https://prtimes.jp/main/html/rd/p/000000477.000014158.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼Press Release
+        </a>
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
