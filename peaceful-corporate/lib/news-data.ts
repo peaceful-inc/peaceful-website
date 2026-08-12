@@ -212,7 +212,7 @@ const rawNewsData: NewsItem[] = [
     title: "寺田倉庫「Creation Camp TENNOZ」第3期に採択",
     titleEn: "Selected for Warehouse TERRADA's 'Creation Camp TENNOZ' 3rd Batch",
     date: "2026.07.17",
-    category: "Award",
+    category: "Program",
     content: `
       <p class="mb-6">
         株式会社peacefulは、寺田倉庫株式会社が主催するシード期スタートアップ向けインキュベーションプログラム「Creation Camp TENNOZ」第3期に採択されました。約200件の応募の中から最終選考に進んだ26社によるピッチ審査を経て、10社の1社に選出されています。本プログラムを通じて、天王洲のインキュベーション施設を拠点に、看護師向けAIエージェント「NURVIS」の事業化を加速してまいります。
@@ -231,6 +231,53 @@ const rawNewsData: NewsItem[] = [
         <a href="https://prtimes.jp/main/html/rd/p/000000477.000014158.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
           ▼Press Release
         </a>
+      </p>
+    `,
+  },
+  {
+    id: "11",
+    title: "NVIDIA Inception Programに採択されました",
+    titleEn: "Selected for NVIDIA Inception Program",
+    date: "2026.08.04",
+    category: "Program",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、NVIDIAが運営するスタートアップ支援プログラム「NVIDIA Inception Program」に採択されました。
+      </p>
+      <p class="mb-6">
+        本プログラムは、AIおよびアクセラレーテッドコンピューティング領域のスタートアップを対象に、開発者向けリソースと技術トレーニング、ハードウェア・ソフトウェアの優待、投資家コミュニティへの接続を提供するものです。
+      </p>
+      <p class="mb-6">
+        当社は、看護師向けウェアラブルAIエージェントの開発と、看護実践の一人称視点データの構造化に取り組んでいます。今後、ヘルスケアロボティクス領域におけるNVIDIAの技術基盤との接続を検討してまいります。
+      </p>
+      <p class="mb-6">
+        引き続き、医療を持続可能な形にするための開発を進めてまいります。
+      </p>
+      <p class="mb-8">
+        <img src="/nvidia-inception-badge.png" alt="NVIDIA Inception Program Member" class="h-[40px] w-auto" />
+      </p>
+      <p class="text-xs text-gray-500">
+        &copy; 2026 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful Inc. has been selected for the "NVIDIA Inception program," a startup support program operated by NVIDIA.
+      </p>
+      <p class="mb-6">
+        This program is designed for startups in the fields of AI and accelerated computing, providing developer resources, technical training, hardware/software discounts, and connections to the investor community.
+      </p>
+      <p class="mb-6">
+        We are developing a wearable AI agent for nurses and working on structuring first-person perspective data of nursing practices. Moving forward, we will explore connections with NVIDIA's technology infrastructure in the healthcare robotics domain.
+      </p>
+      <p class="mb-6">
+        We will continue our development efforts to make healthcare sustainable.
+      </p>
+      <p class="mb-8">
+        <img src="/nvidia-inception-badge.png" alt="NVIDIA Inception Program Member" class="h-[40px] w-auto" />
+      </p>
+      <p class="text-xs text-gray-500">
+        &copy; 2026 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.
       </p>
     `,
   },

@@ -113,6 +113,15 @@ export default function CompanyContent() {
               </dd>
             </div>
           </dl>
+          <div className="mt-8 border-l-2 border-transparent pl-6">
+            <a href="https://www.nvidia.com/en-us/startups/" target="_blank" rel="noopener noreferrer" className="inline-block transition-opacity hover:opacity-80">
+              <img
+                src="/nvidia-inception-badge.png"
+                alt="NVIDIA Inception Program Member"
+                className="h-[30px] md:h-[40px] w-auto"
+              />
+            </a>
+          </div>
         </section>
       </div>
     </div>
