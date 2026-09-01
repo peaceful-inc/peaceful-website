@@ -62,7 +62,9 @@ export default function ContactSection() {
                 </p>
 
                 <a
-                    href="mailto:contact@peaceful.com" // Placeholder email
+                    href="https://forms.gle/nFwkK24V1MNS1EL18"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`group inline-flex items-center gap-3 border-2 border-neon-blue bg-transparent px-6 py-3 md:px-8 md:py-4 text-base md:text-lg font-bold text-neon-blue transition-all duration-300 hover:bg-neon-blue hover:text-background hover:shadow-[0_0_20px_rgba(96,165,250,0.6)] ${isVisible ? "scale-100 opacity-100" : "scale-90 opacity-0"
                         }`}
                     style={{ transitionDelay: "600ms" }}
