@@ -281,6 +281,51 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "12",
+    title: "看護師向けAIエージェント「NURVIS」洛和会丸太町病院で実証を開始",
+    titleEn: "NURVIS, an AI Agent for Nurses, Begins Clinical Proof-of-Concept at Rakuwakai Marutamachi Hospital",
+    date: "2026.09.01",
+    category: "Partnership",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、看護師向けAIエージェント「NURVIS」について、洛和会ヘルスケアシステムが運営する洛和会丸太町病院との共同実証を開始しました。
+      </p>
+      <p class="mb-6">
+        NURVISは骨伝導イヤホンとスマートフォンを用いたウェアラブルデバイスによる看護師向けAIエージェントシステムです。看護記録の自動生成に加え、看護手順や薬剤情報のその場での確認、一日の業務の組み立て、報告やカンファレンスの支援を担います。
+      </p>
+      <p class="mb-6">
+        本実証では、記録業務の負担軽減にとどまらず、看護実践の可視化と暗黙知の継承までを検証範囲としています。
+      </p>
+      <p class="mb-6">
+        詳細は下記のプレスリリースをご覧ください。
+      </p>
+      <p class="mt-8">
+        <a href="https://prtimes.jp/main/html/rd/p/000000002.000185645.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼プレスリリースを見る
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful Inc. has commenced a joint proof-of-concept study of NURVIS, an AI agent for nurses, with Rakuwakai Marutamachi Hospital, operated by Rakuwakai Healthcare System.
+      </p>
+      <p class="mb-6">
+        NURVIS is a wearable AI agent system for nurses, using bone-conduction earphones and a smartphone. Beyond automated nursing documentation, it supports on-the-spot reference to nursing procedures and medication information, structuring the day's workflow, and preparing handovers and conferences.
+      </p>
+      <p class="mb-6">
+        The study examines not only the reduction of documentation burden, but also the visualization of nursing practice and the transfer of tacit knowledge.
+      </p>
+      <p class="mb-6">
+        Please see the press release below for details.
+      </p>
+      <p class="mt-8">
+        <a href="https://prtimes.jp/main/html/rd/p/000000002.000185645.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼View the press release
+        </a>
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
