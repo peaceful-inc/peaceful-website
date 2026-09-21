@@ -326,6 +326,41 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "13",
+    title: "エゴセントリック看護データの収集と構造化に着手",
+    titleEn: "peaceful Begins Collecting and Structuring Egocentric Nursing Data",
+    date: "2026.09.21",
+    category: "Corporate",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、2026年9月より、看護師の一人称視点（エゴセントリック）動画データの収集と構造化を開始しました。看護師資格を持つ自社メンバーが模擬環境で看護ケアを実演し、その視点映像を記録・蓄積するものです。
+      </p>
+      <p class="mb-6">
+        物理世界で認識・判断・行動するAI「フィジカルAI」の進展に伴い、人がどのように観て、判断し、動いたかを記録した学習データの重要性が高まっています。一方、看護の領域では、プライバシー保護の観点から実際の現場映像を収集することが難しく、質の高い学習データが世界的に不足しています。
+      </p>
+      <p class="mb-6">
+        本取り組みでは、実際の患者を撮影するのではなく、自社の看護師による模擬環境での実演という方法を採ることで、この課題に対応します。収集した動画は、動作の記録にとどまらず、看護師が何を観察し、どのように判断したかまでを本人が言語化し、構造化データとして整備します。
+      </p>
+      <p>
+        本取り組みは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」の開発と並行して進めるものです。peacefulは、日本の看護実践に蓄積された暗黙知を、AIが学習できるデータとして残し、次の時代の医療基盤づくりにつなげてまいります。
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful Inc. began collecting and structuring egocentric (first-person) video data of nursing care in September 2026. Licensed nurses on our team perform nursing care in simulated settings, and their point-of-view footage is recorded and accumulated.
+      </p>
+      <p class="mb-6">
+        As Physical AI, which perceives, decides, and acts in the physical world, continues to advance, training data that captures how humans observe, judge, and move is becoming increasingly important. In nursing, however, privacy requirements make it difficult to film actual clinical settings, and high-quality training data remains scarce worldwide.
+      </p>
+      <p class="mb-6">
+        This initiative addresses the challenge by having our own nurses perform care in simulated environments rather than filming actual patients. Beyond recording movements, the nurses themselves verbalize what they observed and how they made their judgments, and this is organized into structured data.
+      </p>
+      <p>
+        This initiative runs in parallel with the development of NURVIS, our AI agent system for nurses based on wearable devices. peaceful is committed to preserving the tacit knowledge of Japanese nursing practice as data that AI can learn from, and to carrying it into the next generation of healthcare.
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
