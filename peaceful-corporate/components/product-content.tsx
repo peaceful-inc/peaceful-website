@@ -101,7 +101,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "話した内容がその場で文字になり、看護記録の文章に整えられます。看護師が確認して、電子カルテに貼り付けます"
+                  ? "話した内容がその場で文字になり、看護記録の文章に整えられます。看護師が確認して、電子カルテに貼り付けます。"
                   : "What you say is transcribed on the spot and shaped into nursing-record text. Nurses review it and paste it into the electronic health record."}
               </p>
             </div>
@@ -112,7 +112,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "看護手順や薬剤情報を声で聞けます。答えには出典が添えられます"
+                  ? "看護手順や薬剤情報を声で聞けます。答えには出典が添えられます。"
                   : "Ask about nursing procedures and drug information by voice. Answers come with their sources."}
               </p>
             </div>
@@ -123,7 +123,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "名前などを端末の中で伏せてから、クラウドへ送ります"
+                  ? "名前などを端末の中で伏せてから、クラウドへ送ります。"
                   : "Names and other identifiers are masked on the device before anything is sent to the cloud."}
               </p>
             </div>
@@ -229,7 +229,7 @@ export default function ProductContent() {
               <span className="mr-3 text-neon-blue">・</span>
               <span>
                 {lang === "ja"
-                  ? "音声は端末の中で文字にし、音声そのものは端末の外に出しません"
+                  ? "音声は端末の中で文字にし、音声そのものは端末の外に出しません。"
                   : "Speech is transcribed on the device; the audio itself never leaves the device."}
               </span>
             </li>
@@ -237,7 +237,7 @@ export default function ProductContent() {
               <span className="mr-3 text-neon-blue">・</span>
               <span>
                 {lang === "ja"
-                  ? "データは国内で保管します"
+                  ? "データは国内で保管します。"
                   : "Data is stored in Japan."}
               </span>
             </li>
@@ -245,7 +245,7 @@ export default function ProductContent() {
               <span className="mr-3 text-neon-blue">・</span>
               <span>
                 {lang === "ja"
-                  ? "記録の確定と臨床判断は看護師が行います。NURVISの答えは一般的な情報で、実施にあたっては所属施設の手順が優先されます"
+                  ? "記録の確定と臨床判断は看護師が行います。NURVISの答えは一般的な情報で、実施にあたっては所属施設の手順が優先されます。"
                   : "Nurses finalize records and make clinical judgments. NURVIS's answers are general information, and your facility's procedures take precedence in practice."}
               </span>
             </li>
@@ -253,7 +253,7 @@ export default function ProductContent() {
 
           <p className="text-xs text-foreground/60 mt-4 pl-6">
             {lang === "ja"
-              ? "※記載の内容は掲載時点のものです。仕様は予告なく変更することがあります"
+              ? "※記載の内容は掲載時点のものです。仕様は予告なく変更することがあります。"
               : "*The information on this page is current as of publication. Specifications are subject to change without notice."}
           </p>
         </section>
@@ -278,11 +278,11 @@ export default function ProductContent() {
                 <span className="text-xl font-bold text-neon-blue md:text-2xl">1</span>
                 <div>
                   <h3 className="text-lg font-bold text-foreground md:text-xl inline mr-2">
-                    {lang === "ja" ? "ご相談：" : "Consultation: "}
+                    {lang === "ja" ? "ご相談" : "Consultation"}
                   </h3>
                   <span className="text-base leading-relaxed text-foreground/90 md:text-lg">
                     {lang === "ja"
-                      ? "現場の記録業務と課題をうかがいます"
+                      ? "現場の記録業務と課題をうかがいます。"
                       : "We learn about your documentation work and challenges."}
                   </span>
                 </div>
@@ -294,11 +294,11 @@ export default function ProductContent() {
                 <span className="text-xl font-bold text-neon-blue md:text-2xl">2</span>
                 <div>
                   <h3 className="text-lg font-bold text-foreground md:text-xl inline mr-2">
-                    {lang === "ja" ? "試験導入：" : "Trial: "}
+                    {lang === "ja" ? "試験導入" : "Trial"}
                   </h3>
                   <span className="text-base leading-relaxed text-foreground/90 md:text-lg">
                     {lang === "ja"
-                      ? "病棟を決め、実際の業務で使っていただきます"
+                      ? "病棟を決め、実際の業務で使っていただきます。"
                       : "Choose a ward and use NURVIS in daily work."}
                   </span>
                 </div>
@@ -310,11 +310,11 @@ export default function ProductContent() {
                 <span className="text-xl font-bold text-neon-blue md:text-2xl">3</span>
                 <div>
                   <h3 className="text-lg font-bold text-foreground md:text-xl inline mr-2">
-                    {lang === "ja" ? "効果の確認：" : "Evaluation: "}
+                    {lang === "ja" ? "効果の確認" : "Evaluation"}
                   </h3>
                   <span className="text-base leading-relaxed text-foreground/90 md:text-lg">
                     {lang === "ja"
-                      ? "記録にかかる時間などを測ります"
+                      ? "記録にかかる時間などを測ります。"
                       : "We measure effects such as time spent on documentation."}
                   </span>
                 </div>
@@ -383,7 +383,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "A NURVISが整えた記録を、看護師が確認して電子カルテに貼り付ける形です"
+                  ? "A NURVISが整えた記録を、看護師が確認して電子カルテに貼り付ける形です。"
                   : "A Nurses review the records NURVIS prepares and paste them into the electronic health record."}
               </p>
             </div>
@@ -396,7 +396,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "A 音声は端末の中で文字にし、音声そのものは端末の外に出しません"
+                  ? "A 音声は端末の中で文字にし、音声そのものは端末の外に出しません。"
                   : "A Speech is transcribed on the device; the audio itself never leaves the device."}
               </p>
             </div>
@@ -409,7 +409,7 @@ export default function ProductContent() {
               </h3>
               <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
                 {lang === "ja"
-                  ? "A 市販の骨伝導イヤホンとスマートフォンで使います"
+                  ? "A 市販の骨伝導イヤホンとスマートフォンで使います。"
                   : "A A commercially available bone-conduction earphone and a smartphone."}
               </p>
             </div>
@@ -432,6 +432,7 @@ export default function ProductContent() {
                     >
                       お問い合わせください
                     </a>
+                    。
                   </>
                 ) : (
                   <>
@@ -442,8 +443,9 @@ export default function ProductContent() {
                       rel="noopener noreferrer"
                       className="text-neon-blue hover:text-white underline underline-offset-4 transition-colors font-medium"
                     >
-                      Please contact us.
+                      Please contact us
                     </a>
+                    .
                   </>
                 )}
               </p>
