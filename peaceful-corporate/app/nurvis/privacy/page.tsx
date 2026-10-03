@@ -35,7 +35,7 @@ export default function NurvisPrivacyPage() {
             <h2 className="text-lg font-bold text-[#008C8C] mb-3 mt-8 pb-2 border-b border-gray-100">1. 事業者情報</h2>
             <p>
               株式会社peaceful<br />
-              所在地：東京都練馬区小竹町1-39-2-103<br />
+              所在地：〒140-0002 東京都品川区東品川2-6-4 寺田倉庫G1ビル 2階<br />
               連絡先：masanari.jinnouchi@peaceful-inc.com
             </p>
           </section>

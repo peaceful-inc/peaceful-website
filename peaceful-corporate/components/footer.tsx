@@ -26,11 +26,11 @@ export default function Footer() {
                         {lang === 'ja' ? (
                             <>
                                 株式会社peaceful<br />
-                                東京都練馬区
+                                〒140-0002 東京都品川区東品川2-6-4 寺田倉庫G1ビル 2階
                             </>
                         ) : (
                             <>
-                                Nerima-ku, Tokyo / CEO: Masanari Jinnouchi
+                                Warehouse TERRADA G1 Bldg. 2F, 2-6-4 Higashi-Shinagawa, Shinagawa-ku, Tokyo 140-0002 / CEO: Masanari Jinnouchi
                             </>
                         )}
                     </address>
@@ -77,7 +77,7 @@ export default function Footer() {
             </div>
 
             <div className="mt-12 text-center text-xs text-foreground/40">
-                &copy; 2025 peaceful Inc. All rights reserved.
+                &copy; 2026 peaceful Inc. All rights reserved.
             </div>
         </footer>
     )

@@ -195,7 +195,9 @@ export default function CompanyContent() {
                 {lang === "ja" ? "所在地" : "Location"}
               </dt>
               <dd className="text-lg text-foreground/90 md:text-xl">
-                {lang === "ja" ? "東京都練馬区" : "Nerima-ku, Tokyo"}
+                {lang === "ja"
+                  ? "〒140-0002 東京都品川区東品川2-6-4 寺田倉庫G1ビル 2階"
+                  : "Warehouse TERRADA G1 Bldg. 2F, 2-6-4 Higashi-Shinagawa, Shinagawa-ku, Tokyo 140-0002"}
               </dd>
             </div>
             <div className="group">
