@@ -86,7 +86,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "できること" : "WHAT IT DOES"}
+              {lang === "ja" ? "できること" : "Features"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               WHAT IT DOES
@@ -137,7 +137,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "使い方" : "HOW IT WORKS"}
+              {lang === "ja" ? "使い方" : "Workflow"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               HOW IT WORKS
@@ -217,7 +217,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "安全への配慮" : "PRIVACY"}
+              {lang === "ja" ? "安全への配慮" : "Safeguards"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               PRIVACY
@@ -265,7 +265,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "導入の流れ" : "INTRODUCTION"}
+              {lang === "ja" ? "導入の流れ" : "Getting Started"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               INTRODUCTION
@@ -341,7 +341,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "実証" : "CASE"}
+              {lang === "ja" ? "実証" : "Field Study"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               CASE
@@ -367,7 +367,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "よくある質問" : "FAQ"}
+              {lang === "ja" ? "よくある質問" : "Questions"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               FAQ
@@ -460,7 +460,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "これから" : "THE FUTURE"}
+              {lang === "ja" ? "これから" : "Looking Ahead"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               THE FUTURE

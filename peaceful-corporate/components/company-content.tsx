@@ -47,10 +47,10 @@ export default function CompanyContent() {
               : "none",
           }}
         >
-          {lang === "ja" ? "会社情報" : "Company"}
+          {lang === "ja" ? "会社情報" : "Company Information"}
           <br />
           <span className="text-3xl md:text-4xl lg:text-5xl">
-            {lang === "ja" ? "COMPANY" : "ABOUT US"}
+            COMPANY
           </span>
         </h1>
       </div>
@@ -64,7 +64,7 @@ export default function CompanyContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "代表" : "FOUNDER"}
+              {lang === "ja" ? "代表" : "Our Founder"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               FOUNDER
@@ -137,7 +137,7 @@ export default function CompanyContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "チーム" : "TEAM"}
+              {lang === "ja" ? "チーム" : "Our Team"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               TEAM
@@ -235,7 +235,7 @@ export default function CompanyContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "採択・参画" : "RECOGNITION"}
+              {lang === "ja" ? "採択・参画" : "Programs & Recognition"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               RECOGNITION
