@@ -4,9 +4,9 @@ import { newsData } from "@/lib/news-data"
 import NewsDetailContent from "@/components/news-detail-content"
 
 interface NewsDetailPageProps {
-    params: {
+    params: Promise<{
         id: string
-    }
+    }>
 }
 
 // NOTE: generateStaticParams works with Client Components in Next.js App Router
@@ -16,8 +16,9 @@ export function generateStaticParams() {
     }))
 }
 
-export default function NewsDetailPage({ params }: NewsDetailPageProps) {
-    const newsItem = newsData.find((item) => item.id === params.id)
+export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
+    const { id } = await params
+    const newsItem = newsData.find((item) => item.id === id)
 
     if (!newsItem) {
         notFound()
