@@ -1,1 +1,30 @@
-* @masanarijinnouchi-lgtm
+# 既定：すべて MJ の承認が必要（コードオーナーの承認が必須のルールで GitHub が強制する）
+*    @masanarijinnouchi-lgtm
+
+# --- MJ の承認なしで合流できる場所（2026-10-09、MJ 承認）：テスト、点検の設定、文書・計画 ---
+# 持ち主を書かない行は「持ち主なし」。あとに書いた行が優先される。
+# ここだけを変える PR は、Opus のレビューが合格で、チェックがすべて成功なら、MJ を待たずに合流する（KIPP が自動合流を設定する）。
+# アプリのコード・バックエンドの関数・プロンプト・インフラ・認証・データの扱い・公開サイトの文言は、ここに入れない。
+# CI の設定（.github/workflows）は、いまリポジトリに CI がないので、まだ入れていない。
+/docs/
+/README.md
+/peaceful-corporate/__tests__/
+/peaceful-corporate/**/*.test.ts
+/peaceful-corporate/**/*.test.tsx
+/peaceful-corporate/**/*.spec.ts
+/peaceful-corporate/**/*.spec.tsx
+/peaceful-corporate/eslint.config.*
+/peaceful-corporate/.eslintrc*
+
+# --- 免除の場所の中でも、MJ の承認が要るもの（上の免除より優先される。迷ったら MJ の承認が要る側） ---
+*prompt*      @masanarijinnouchi-lgtm
+*secret*      @masanarijinnouchi-lgtm
+*auth*        @masanarijinnouchi-lgtm
+*cognito*     @masanarijinnouchi-lgtm
+*credential*  @masanarijinnouchi-lgtm
+.env*         @masanarijinnouchi-lgtm
+*.pem         @masanarijinnouchi-lgtm
+CLAUDE.md     @masanarijinnouchi-lgtm
+AGENTS.md     @masanarijinnouchi-lgtm
+.gitleaks*    @masanarijinnouchi-lgtm
+/.github/     @masanarijinnouchi-lgtm
