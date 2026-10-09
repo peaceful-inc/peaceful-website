@@ -14,7 +14,7 @@ export default function Header() {
   const navItems = [
     { name: lang === 'ja' ? 'Vision' : 'Vision', href: "/vision" },
     { name: lang === 'ja' ? 'Product' : 'Product', href: "/product" },
-    { name: lang === 'ja' ? 'Giga-Hospital' : 'Giga-Hospital', href: "/giga-hospital" },
+    { name: lang === 'ja' ? 'Research' : 'Research', href: "/research" },
     { name: lang === 'ja' ? 'Company' : 'Company', href: "/company" },
     { name: lang === 'ja' ? 'News' : 'News', href: "/news" },
     { name: lang === 'ja' ? 'Contact' : 'Contact', href: "https://forms.gle/nFwkK24V1MNS1EL18", external: true },

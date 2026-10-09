@@ -66,7 +66,7 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "概要" : "OVERVIEW"}
+              {lang === "ja" ? "概要" : "Overview"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               WHAT IT IS
@@ -268,7 +268,7 @@ export default function ProductContent() {
               {lang === "ja" ? "導入の流れ" : "Getting Started"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
-              INTRODUCTION
+              IMPLEMENTATION
             </span>
           </div>
 
@@ -341,10 +341,10 @@ export default function ProductContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "実証" : "Field Study"}
+              {lang === "ja" ? "実証" : "Pilot Program"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
-              CASE
+              CASE STUDY
             </span>
           </div>
           <p className="text-lg leading-relaxed text-foreground/90 md:text-xl">
@@ -469,7 +469,30 @@ export default function ProductContent() {
           <p className="text-lg leading-relaxed text-foreground/90 md:text-xl">
             {lang === "ja"
               ? "NURVISが目指すのは、記録の負担を減らすことだけではありません。これまで言語化されてこなかった看護師の判断やケアを可視化し、次の世代へ受け継ぐことです。"
-              : "NURVIS aims to do more than reduce the burden of documentation. It seeks to make visible the judgment and care of nurses that have gone unspoken, and to pass them on to the next generation."}
+              : "NURVIS aims to do more than reduce the burden of documentation. It seeks to make visible the judgment and care of nurses that have gone unspoken, and to pass them on to the next generation."}{" "}
+            {lang === "ja" ? (
+              <>
+                この取り組みは
+                <Link
+                  href="/research"
+                  className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
+                >
+                  研究のページ
+                </Link>
+                で紹介しています。
+              </>
+            ) : (
+              <>
+                Learn more on our{" "}
+                <Link
+                  href="/research"
+                  className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
+                >
+                  Research page
+                </Link>
+                .
+              </>
+            )}
           </p>
         </section>
 

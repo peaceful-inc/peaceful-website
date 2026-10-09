@@ -157,7 +157,7 @@ export default function CompanyContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "会社概要" : "COMPANY PROFILE"}
+              {lang === "ja" ? "会社概要" : "Company Profile"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               PROFILE

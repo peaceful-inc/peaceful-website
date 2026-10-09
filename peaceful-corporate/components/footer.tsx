@@ -64,8 +64,8 @@ export default function Footer() {
                     <Link href="/product" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Product
                     </Link>
-                    <Link href="/giga-hospital" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
-                        Giga-Hospital
+                    <Link href="/research" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                        Research
                     </Link>
                     <Link href="/company" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Company

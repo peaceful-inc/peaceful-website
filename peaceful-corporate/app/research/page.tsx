@@ -1,20 +1,20 @@
 import type { Metadata } from "next"
 import Header from "@/components/header"
 import ParticleBackground from "@/components/particle-background"
-import VisionContent from "@/components/vision-content"
+import ResearchContent from "@/components/research-content"
 
 export const metadata: Metadata = {
-  title: "Vision｜peaceful",
+  title: "研究｜peaceful",
   description:
-    "株式会社peacefulのビジョン。看護の現場を支え、看護の知見を残し、医療の届け方を変える取り組みと、GIGA-HOSPITAL構想を紹介します。",
+    "看護師の一人称視点（エゴセントリック）動画データの収集と構造化に関する、peacefulの研究の取り組みを紹介します。",
 }
 
-export default function VisionPage() {
+export default function ResearchPage() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
       <ParticleBackground />
       <Header />
-      <VisionContent />
+      <ResearchContent />
     </main>
   )
 }
