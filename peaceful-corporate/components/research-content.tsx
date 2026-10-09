@@ -93,8 +93,8 @@ export default function ResearchContent() {
           <ul className="list-disc space-y-4 border-l-2 border-neon-blue/30 pl-10 text-base leading-relaxed text-foreground/90 marker:text-neon-blue md:text-lg">
             <li>
               {lang === "ja"
-                ? "実際の患者は撮影しません。看護師資格を持つ自社メンバーが模擬環境で看護ケアを実演し、その視点の映像を記録します。"
-                : "We do not film real patients. Our own staff members, who are licensed nurses, demonstrate nursing care in a simulated environment, and we record video from their point of view."}
+                ? "この取り組みでは、実際の患者さんを撮影するのではなく、看護師資格を持つ自社メンバーが模擬環境で看護ケアを実演し、その視点の映像を記録します。"
+                : "In this initiative, rather than filming real patients, our own staff members who are licensed nurses demonstrate nursing care in a simulated environment, and we record video from their point of view."}
             </li>
             <li>
               {lang === "ja"
@@ -111,7 +111,7 @@ export default function ResearchContent() {
         >
           <div className="mb-6 flex items-baseline gap-4">
             <h2 className="text-2xl font-bold tracking-tight text-neon-blue md:text-3xl">
-              {lang === "ja" ? "NURVISとの関係" : "How It Differs from NURVIS"}
+              {lang === "ja" ? "NURVISとの関係" : "Relation to NURVIS"}
             </h2>
             <span className="text-sm font-medium tracking-widest text-neon-blue/60 md:text-base">
               RELATION TO NURVIS
@@ -119,8 +119,8 @@ export default function ResearchContent() {
           </div>
           <p className="text-lg leading-relaxed text-foreground/90 md:text-xl">
             {lang === "ja"
-              ? "NURVISは看護記録を支えるAIエージェントで、患者の映像を集めるものではありません。この研究は、NURVISの開発と並行して進める別の取り組みです。"
-              : "NURVIS is an AI agent that supports nursing documentation; it does not collect video of patients. This research is a separate effort that we pursue alongside the development of NURVIS."}
+              ? "この研究は、NURVISの開発と並行して進めている取り組みです。"
+              : "This research is an effort we pursue alongside the development of NURVIS."}
           </p>
         </section>
 
