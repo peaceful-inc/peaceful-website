@@ -94,7 +94,7 @@ export default function ServicesSection() {
                             </p>
                         </div>
                         <Link
-                            href="/giga-hospital"
+                            href="/vision#giga-hospital"
                             className="mt-4 inline-flex items-center gap-2 text-sm font-bold tracking-widest text-neon-blue transition-colors group-hover:text-white"
                         >
                             READ MORE <ArrowRight className="h-4 w-4" />

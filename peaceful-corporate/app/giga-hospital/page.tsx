@@ -1,13 +1,6 @@
-import Header from "@/components/header"
-import ParticleBackground from "@/components/particle-background"
-import GigaHospitalContent from "@/components/giga-hospital-content"
+import { permanentRedirect } from "next/navigation"
 
+// 本来の転送は next.config.mjs の redirects で行う。これは念のための予備。
 export default function GigaHospitalPage() {
-  return (
-    <main className="relative min-h-screen bg-background">
-      <ParticleBackground />
-      <Header />
-      <GigaHospitalContent />
-    </main>
-  )
+  permanentRedirect("/vision#giga-hospital")
 }
