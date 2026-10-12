@@ -2,37 +2,16 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function ResearchContent() {
   const [isVisible, setIsVisible] = useState(false)
   const { lang } = useLanguage()
+  const localePath = useLocalePath()
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
-
-  useEffect(() => {
-    if (lang === "ja") {
-      document.title = "研究｜peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "看護師の一人称視点（エゴセントリック）動画データの収集と構造化に関する、peacefulの研究の取り組みを紹介します。"
-        )
-      }
-    } else {
-      document.title = "Research | peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "peaceful's research on collecting and structuring egocentric (first-person) video data from nurses."
-        )
-      }
-    }
-  }, [lang])
 
   return (
     <div className="relative z-10 flex min-h-screen flex-col items-center justify-start px-8 pt-32 pb-20">
@@ -142,7 +121,7 @@ export default function ResearchContent() {
               ? "日本の看護実践に蓄積された暗黙知を、AIが学べるデータとして残し、次の時代の医療の基盤づくりにつなげます。"
               : "We aim to preserve the tacit knowledge built up in Japanese nursing practice as data that AI can learn from, and to help lay the foundation for the next era of healthcare."}{" "}
             <Link
-              href="/news/13"
+              href={localePath("/news/13")}
               className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
             >
               {lang === "ja" ? "詳しくはこちら" : "Read more"}

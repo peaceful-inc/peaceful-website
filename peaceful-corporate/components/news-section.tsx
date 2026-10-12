@@ -4,13 +4,14 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 
 import { newsData } from "@/lib/news-data"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 const displayedNews = newsData.slice(0, 3)
 
 export default function NewsSection() {
     const [isVisible, setIsVisible] = useState(false)
     const { lang } = useLanguage()
+    const localePath = useLocalePath()
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -55,7 +56,7 @@ export default function NewsSection() {
                 <div className="space-y-6 border-l-2 border-neon-blue/30 pl-4 md:pl-6">
 
                     {displayedNews.map((item, index) => (
-                        <Link key={item.id} href={`/news/${item.id}`} className="group block">
+                        <Link key={item.id} href={localePath(`/news/${item.id}`)} className="group block">
                             <article
                                 className={`transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"
                                     }`}
@@ -76,7 +77,7 @@ export default function NewsSection() {
 
                 <div className={`mt-10 flex justify-center transition-all duration-1000 delay-500 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}>
                     <Link
-                        href="/news"
+                        href={localePath("/news")}
                         className="group relative px-6 py-2 text-sm font-medium text-white transition-all hover:text-neon-blue"
                     >
                         <span className="relative z-10">{lang === 'en' ? "VIEW ALL NEWS" : "ニュース一覧"}</span>

@@ -6,7 +6,7 @@ import { ArrowLeft } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 import { NewsItem } from "@/lib/news-data"
 
 interface NewsDetailContentProps {
@@ -15,6 +15,7 @@ interface NewsDetailContentProps {
 
 export default function NewsDetailContent({ newsItem }: NewsDetailContentProps) {
     const { lang } = useLanguage()
+    const localePath = useLocalePath()
 
     return (
         <div className="flex min-h-screen flex-col bg-black text-white selection:bg-neon-blue selection:text-black">
@@ -23,7 +24,7 @@ export default function NewsDetailContent({ newsItem }: NewsDetailContentProps) 
             <main className="container relative z-10 mx-auto flex-1 px-4 py-32 md:py-40">
                 <div className="mx-auto max-w-4xl">
                     <Button variant="ghost" asChild className="group mb-12 pl-0 text-gray-400 hover:bg-transparent hover:text-white">
-                        <Link href="/" className="flex items-center gap-2">
+                        <Link href={localePath("/")} className="flex items-center gap-2">
                             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
                             <span className="text-sm font-medium tracking-wider">
                                 {lang === 'en' ? "BACK TO HOME" : "ホームに戻る"}

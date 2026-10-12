@@ -3,11 +3,12 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import { newsData } from "@/lib/news-data"
 
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function NewsContent() {
   const [isVisible, setIsVisible] = useState(false)
   const { lang } = useLanguage()
+  const localePath = useLocalePath()
 
   useEffect(() => {
     setIsVisible(true)
@@ -33,7 +34,7 @@ export default function NewsContent() {
       {/* News List */}
       <div className="w-full max-w-4xl space-y-8">
         {newsData.map((item, index) => (
-          <Link key={item.id} href={`/news/${item.id}`} className="block group">
+          <Link key={item.id} href={localePath(`/news/${item.id}`)} className="block group">
             <article
               className={`cursor-pointer border-l-2 border-transparent pl-6 transition-all duration-1000 hover:border-neon-blue ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
                 }`}

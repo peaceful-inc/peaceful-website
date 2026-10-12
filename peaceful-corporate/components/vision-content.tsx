@@ -2,37 +2,16 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function VisionContent() {
   const [isVisible, setIsVisible] = useState(false)
   const { lang } = useLanguage()
+  const localePath = useLocalePath()
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
-
-  useEffect(() => {
-    if (lang === "ja") {
-      document.title = "Vision｜peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "株式会社peacefulのビジョン。看護の現場を支え、看護の知見を残し、医療の届け方を変える取り組みと、GIGA-HOSPITAL構想を紹介します。"
-        )
-      }
-    } else {
-      document.title = "Vision | peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "peaceful's vision: supporting nursing on the front line, preserving nursing knowledge, and changing how care is delivered through the GIGA-HOSPITAL concept."
-        )
-      }
-    }
-  }, [lang])
 
   return (
     <div className="relative z-10 flex min-h-screen flex-col items-center justify-start px-8 pt-32 pb-20">
@@ -104,7 +83,7 @@ export default function VisionContent() {
           <ul className="list-disc space-y-4 border-l-2 border-neon-blue/30 pl-10 text-base leading-relaxed text-foreground/90 marker:text-neon-blue md:text-lg">
             <li>
               <Link
-                href="/product"
+                href={localePath("/product")}
                 className="font-bold text-neon-blue underline underline-offset-4 transition-colors hover:text-white"
               >
                 {lang === 'ja' ? '看護の現場を支える' : 'Supporting nursing on the front line'}
@@ -115,7 +94,7 @@ export default function VisionContent() {
             </li>
             <li>
               <Link
-                href="/research"
+                href={localePath("/research")}
                 className="font-bold text-neon-blue underline underline-offset-4 transition-colors hover:text-white"
               >
                 {lang === 'ja' ? '看護の知見を残す' : 'Preserving nursing knowledge'}

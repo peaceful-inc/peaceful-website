@@ -4,12 +4,15 @@ import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { LanguageProvider } from "@/components/language-context"
+import { SITE_URL } from "@/lib/seo"
 import { Suspense } from "react"
-import "./globals.css"
+import "../globals.css"
 
 export const metadata: Metadata = {
-  title: "Peaceful - 未来の医療を築く",
-  description: "その手の温もり、語りかける声。我々の葛藤のすべてが、未来の医療の礎を築く。",
+  metadataBase: new URL(SITE_URL),
+  title: "株式会社peaceful｜看護師向けAIエージェント「NURVIS」",
+  description:
+    "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を開発しています。NURVISは、看護師がケアをしながら話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確かめられるようにします。",
   generator: "v0.app",
 }
 
@@ -21,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
-        <LanguageProvider>
+        <LanguageProvider initialLang="ja">
           <Suspense fallback={<div>Loading...</div>}>
             {children}
             <Analytics />

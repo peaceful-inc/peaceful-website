@@ -4,19 +4,26 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { useLanguage } from "@/components/language-context"
+import { usePathname } from "next/navigation"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function Header() {
-  const { lang, setLang } = useLanguage()
+  const { lang } = useLanguage()
+  const localePath = useLocalePath()
+  const pathname = usePathname() ?? "/"
   const [hoveredItem, setHoveredItem] = useState<string | null>(null)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  // JP/EN の切り替え先は、同じページの別の言語のURL
+  const jaPath = lang === "en" ? pathname.replace(/^\/en(?=\/|$)/, "") || "/" : pathname
+  const enPath = lang === "en" ? pathname : pathname === "/" ? "/en" : `/en${pathname}`
+
   const navItems = [
-    { name: lang === 'ja' ? 'Vision' : 'Vision', href: "/vision" },
-    { name: lang === 'ja' ? 'Product' : 'Product', href: "/product" },
-    { name: lang === 'ja' ? 'Research' : 'Research', href: "/research" },
-    { name: lang === 'ja' ? 'Company' : 'Company', href: "/company" },
-    { name: lang === 'ja' ? 'News' : 'News', href: "/news" },
+    { name: lang === 'ja' ? 'Vision' : 'Vision', href: localePath("/vision") },
+    { name: lang === 'ja' ? 'Product' : 'Product', href: localePath("/product") },
+    { name: lang === 'ja' ? 'Research' : 'Research', href: localePath("/research") },
+    { name: lang === 'ja' ? 'Company' : 'Company', href: localePath("/company") },
+    { name: lang === 'ja' ? 'News' : 'News', href: localePath("/news") },
     { name: lang === 'ja' ? 'Contact' : 'Contact', href: "https://forms.gle/nFwkK24V1MNS1EL18", external: true },
   ]
 
@@ -25,7 +32,7 @@ export default function Header() {
       <nav className="flex items-center justify-between">
         {/* Logo */}
         <Link
-          href="/"
+          href={localePath("/")}
           className="relative z-50 transition-opacity hover:opacity-80"
         >
           <Image
@@ -65,19 +72,19 @@ export default function Header() {
             </li>
           ))}
           <li className="flex items-center gap-2 text-sm font-medium">
-            <button
-              onClick={() => setLang('ja')}
+            <Link
+              href={jaPath}
               className={`transition-colors ${lang === 'ja' ? 'text-neon-blue' : 'text-foreground/60 hover:text-foreground'}`}
             >
               JP
-            </button>
+            </Link>
             <span className="text-foreground/40">/</span>
-            <button
-              onClick={() => setLang('en')}
+            <Link
+              href={enPath}
               className={`transition-colors ${lang === 'en' ? 'text-neon-blue' : 'text-foreground/60 hover:text-foreground'}`}
             >
               EN
-            </button>
+            </Link>
           </li>
         </ul>
 
@@ -100,25 +107,21 @@ export default function Header() {
               </li>
             ))}
             <li className="flex items-center gap-4 text-xl font-bold mt-4">
-              <button
-                onClick={() => {
-                  setLang('ja')
-                  setIsMenuOpen(false)
-                }}
+              <Link
+                href={jaPath}
+                onClick={() => setIsMenuOpen(false)}
                 className={`transition-colors ${lang === 'ja' ? 'text-neon-blue' : 'text-foreground/60 hover:text-foreground'}`}
               >
                 JP
-              </button>
+              </Link>
               <span className="text-foreground/40">/</span>
-              <button
-                onClick={() => {
-                  setLang('en')
-                  setIsMenuOpen(false)
-                }}
+              <Link
+                href={enPath}
+                onClick={() => setIsMenuOpen(false)}
                 className={`transition-colors ${lang === 'en' ? 'text-neon-blue' : 'text-foreground/60 hover:text-foreground'}`}
               >
                 EN
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

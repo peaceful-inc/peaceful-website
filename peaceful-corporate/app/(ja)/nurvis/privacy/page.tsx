@@ -3,6 +3,7 @@ import Image from "next/image"
 
 export const metadata: Metadata = {
   title: 'NURVIS プライバシーポリシー | peaceful inc.',
+  alternates: { canonical: '/nurvis/privacy' },
 }
 
 export default function NurvisPrivacyPage() {

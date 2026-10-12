@@ -2,14 +2,17 @@ import type { Metadata } from "next"
 import Header from "@/components/header"
 import ParticleBackground from "@/components/particle-background"
 import ResearchContent from "@/components/research-content"
+import { pageMetadata } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "研究｜peaceful",
+export const metadata: Metadata = pageMetadata({
+  lang: "en",
+  path: "/research",
+  title: "Research | peaceful",
   description:
-    "看護師の一人称視点（エゴセントリック）動画データの収集と構造化に関する、peacefulの研究の取り組みを紹介します。",
-}
+    "peaceful's research on collecting and structuring egocentric (first-person) video data from nurses.",
+})
 
-export default function ResearchPage() {
+export default function ResearchPageEn() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
       <ParticleBackground />
