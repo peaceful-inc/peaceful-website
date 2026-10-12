@@ -3,10 +3,11 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { ArrowRight } from "lucide-react"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function ServicesSection() {
     const { lang } = useLanguage()
+    const localePath = useLocalePath()
     const [isVisible, setIsVisible] = useState(false)
 
     useEffect(() => {
@@ -72,7 +73,7 @@ export default function ServicesSection() {
                             )}
                         </div>
                         <Link
-                            href="/product"
+                            href={localePath("/product")}
                             className="mt-4 inline-flex items-center gap-2 text-sm font-bold tracking-widest text-neon-blue transition-colors group-hover:text-white"
                         >
                             READ MORE <ArrowRight className="h-4 w-4" />
@@ -94,7 +95,7 @@ export default function ServicesSection() {
                             </p>
                         </div>
                         <Link
-                            href="/vision#giga-hospital"
+                            href={localePath("/vision#giga-hospital")}
                             className="mt-4 inline-flex items-center gap-2 text-sm font-bold tracking-widest text-neon-blue transition-colors group-hover:text-white"
                         >
                             READ MORE <ArrowRight className="h-4 w-4" />

@@ -2,37 +2,16 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function ProductContent() {
   const [isVisible, setIsVisible] = useState(false)
   const { lang } = useLanguage()
+  const localePath = useLocalePath()
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
-
-  useEffect(() => {
-    if (lang === "ja") {
-      document.title = "NURVIS｜看護師向けAIエージェント｜peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "骨伝導イヤホンとスマートフォンで身につける看護師向けAIエージェントNURVIS。話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確認できます。"
-        )
-      }
-    } else {
-      document.title = "NURVIS | AI Agent for Nurses | peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "NURVIS is an AI agent for nurses, worn through a bone-conduction earphone and a smartphone. It turns what nurses say into nursing-record text and lets them check procedures and drug information on the spot."
-        )
-      }
-    }
-  }, [lang])
 
   return (
     <div className="relative z-10 flex min-h-screen flex-col items-center justify-start px-8 pt-32 pb-20">
@@ -352,7 +331,7 @@ export default function ProductContent() {
               ? "洛和会丸太町病院（京都市）との共同実証を2026年8月に開始しました。看護師がNURVISを日常の看護業務で使い、記録業務の負担軽減に加えて、看護の質や働き方への影響を検証します。"
               : "In August 2026, we began a joint demonstration study with Rakuwakai Marutamachi Hospital (Kyoto). Nurses use NURVIS in their daily work, and the study examines its effects on documentation burden as well as on the quality of care and nurses' working styles."}{" "}
             <Link
-              href="/news/12"
+              href={localePath("/news/12")}
               className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
             >
               {lang === "ja" ? "詳しくはこちら" : "Read more"}
@@ -474,7 +453,7 @@ export default function ProductContent() {
               <>
                 この取り組みは
                 <Link
-                  href="/research"
+                  href={localePath("/research")}
                   className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
                 >
                   研究のページ
@@ -485,7 +464,7 @@ export default function ProductContent() {
               <>
                 Learn more on our{" "}
                 <Link
-                  href="/research"
+                  href={localePath("/research")}
                   className="inline-flex items-center gap-1 text-neon-blue hover:text-white transition-colors underline underline-offset-4 font-medium"
                 >
                   Research page

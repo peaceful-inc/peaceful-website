@@ -2,10 +2,11 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function Footer() {
     const { lang } = useLanguage()
+    const localePath = useLocalePath()
 
     return (
         <footer className="relative z-10 border-t border-neon-blue/20 bg-background px-8 py-12">
@@ -13,7 +14,7 @@ export default function Footer() {
 
                 {/* Logo & Address */}
                 <div className="text-center md:text-left">
-                    <Link href="/" className="inline-block transition-opacity hover:opacity-80">
+                    <Link href={localePath("/")} className="inline-block transition-opacity hover:opacity-80">
                         <Image
                             src="/logo.png"
                             alt="peaceful"
@@ -58,19 +59,19 @@ export default function Footer() {
 
                 {/* Navigation */}
                 <nav className="flex flex-wrap justify-center gap-8 md:justify-end">
-                    <Link href="/vision" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                    <Link href={localePath("/vision")}className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Vision
                     </Link>
-                    <Link href="/product" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                    <Link href={localePath("/product")}className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Product
                     </Link>
-                    <Link href="/research" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                    <Link href={localePath("/research")}className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Research
                     </Link>
-                    <Link href="/company" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                    <Link href={localePath("/company")}className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         Company
                     </Link>
-                    <Link href="/news" className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
+                    <Link href={localePath("/news")}className="text-sm font-medium text-foreground/80 hover:text-neon-blue transition-colors">
                         News
                     </Link>
                 </nav>

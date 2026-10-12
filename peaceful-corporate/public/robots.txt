@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.peaceful-inc.com/sitemap.xml

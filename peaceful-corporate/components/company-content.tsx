@@ -2,37 +2,16 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { useLanguage } from "@/components/language-context"
+import { useLanguage, useLocalePath } from "@/components/language-context"
 
 export default function CompanyContent() {
   const [isVisible, setIsVisible] = useState(false)
   const { lang } = useLanguage()
+  const localePath = useLocalePath()
 
   useEffect(() => {
     setIsVisible(true)
   }, [])
-
-  useEffect(() => {
-    if (lang === "ja") {
-      document.title = "会社情報｜peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "株式会社peacefulの会社情報。代表、チーム、会社概要、採択・参画の実績を掲載しています。"
-        )
-      }
-    } else {
-      document.title = "Company | peaceful"
-      const metaDesc = document.querySelector('meta[name="description"]')
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          "content",
-          "Company information for peaceful Inc.: our founder, team, company profile, and recognition."
-        )
-      }
-    }
-  }, [lang])
 
   return (
     <div className="relative z-10 flex min-h-screen flex-col items-center justify-start px-8 pt-32 pb-20">
@@ -246,7 +225,7 @@ export default function CompanyContent() {
             <li className="flex items-start text-base leading-relaxed text-foreground/90 md:text-lg group">
               <span className="mr-3 text-neon-blue shrink-0">・</span>
               <Link
-                href="/news/11"
+                href={localePath("/news/11")}
                 className="hover:text-neon-blue transition-colors underline underline-offset-4"
               >
                 {lang === "ja"
@@ -257,7 +236,7 @@ export default function CompanyContent() {
             <li className="flex items-start text-base leading-relaxed text-foreground/90 md:text-lg group">
               <span className="mr-3 text-neon-blue shrink-0">・</span>
               <Link
-                href="/news/10"
+                href={localePath("/news/10")}
                 className="hover:text-neon-blue transition-colors underline underline-offset-4"
               >
                 {lang === "ja"
@@ -268,7 +247,7 @@ export default function CompanyContent() {
             <li className="flex items-start text-base leading-relaxed text-foreground/90 md:text-lg group">
               <span className="mr-3 text-neon-blue shrink-0">・</span>
               <Link
-                href="/news/3"
+                href={localePath("/news/3")}
                 className="hover:text-neon-blue transition-colors underline underline-offset-4"
               >
                 {lang === "ja"
@@ -279,7 +258,7 @@ export default function CompanyContent() {
             <li className="flex items-start text-base leading-relaxed text-foreground/90 md:text-lg group">
               <span className="mr-3 text-neon-blue shrink-0">・</span>
               <Link
-                href="/news/2"
+                href={localePath("/news/2")}
                 className="hover:text-neon-blue transition-colors underline underline-offset-4"
               >
                 {lang === "ja"
