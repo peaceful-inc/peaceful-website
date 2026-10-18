@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 英語ページが無い公開ページ
   entries.push({ url: `${SITE_URL}/nurvis/privacy` })
+  entries.push({ url: `${SITE_URL}/security-policy` })
 
   return entries
 }
