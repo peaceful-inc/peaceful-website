@@ -77,7 +77,14 @@ export default function Footer() {
                 </nav>
             </div>
 
-            <div className="mt-12 text-center text-xs text-foreground/40">
+            <div className="mt-12 text-center text-xs">
+                {/* 日本語のみ（英語版は作らない） */}
+                <Link href="/security-policy" className="text-foreground/60 hover:text-neon-blue transition-colors">
+                    情報セキュリティ基本方針
+                </Link>
+            </div>
+
+            <div className="mt-4 text-center text-xs text-foreground/40">
                 &copy; 2026 peaceful Inc. All rights reserved.
             </div>
         </footer>
