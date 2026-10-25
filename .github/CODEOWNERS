@@ -5,7 +5,7 @@
 # この一覧は、KIPP が各リポジトリのコードから起こした。足りない場所・多すぎる場所は、MJ が PR で直す。迷ったら MJ の持ち物にする。
 
 # --- A：患者さんの安全・個人情報（ウェブサイト） ---
-/peaceful-corporate/app/nurvis/privacy/     @masanarijinnouchi-lgtm   # NURVIS のプライバシー（個人情報の取り扱い）の文言
+/peaceful-corporate/app/**/nurvis/privacy/  @masanarijinnouchi-lgtm   # 各言語の NURVIS のプライバシー（個人情報の取り扱い）の文言
 *prompt*                                    @masanarijinnouchi-lgtm   # AI への指示（名前に prompt を含むもの）
 *secret*                                    @masanarijinnouchi-lgtm
 *auth*                                      @masanarijinnouchi-lgtm   # 認証（名前に auth を含むもの）
