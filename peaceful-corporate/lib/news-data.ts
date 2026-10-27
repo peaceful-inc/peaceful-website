@@ -361,6 +361,71 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "14",
+    title: "【11/14登壇】第46回医療情報学連合大会の公募パネルディスカッションで座長と演者を務めます",
+    titleEn: "[Event] Nov 14: Chairing and Speaking at a Panel Discussion at the 46th Joint Conference on Medical Informatics",
+    date: "2026.10.26",
+    category: "Event",
+    content: `
+      <p class="mb-6">
+        株式会社peaceful 代表取締役の陣之内 将成が、第46回医療情報学連合大会（第27回日本医療情報学会学術大会）の公募パネルディスカッションで、座長と演者を務めます。
+      </p>
+      <p class="mb-6">
+        公募パネルディスカッション5<br>
+        データから価値へ：標準化された医療データ基盤とAIが拓く道<br>
+        日時：2026年11月14日（土）9:10〜11:10<br>
+        会場：札幌コンベンションセンター D会場（中ホールB）
+      </p>
+      <p class="mb-6">
+        陣之内の演題は「現場に眠るRWDの収集とAI応用」です。日本のリアルワールドデータ（RWD）の利活用が進む一方で、看護由来のデータはその流れからほぼ取り残されています。患者さんの一番近くにいる看護師の観察と判断は、多くが記録に残る前に失われ、残った記録も二次利用の枠組みにはほとんど載っていません。現場に眠るこのデータをどう集め、AIで使えるデータにしていくかを、当社が急性期病院の病棟で進めているウェアラブルデバイスを用いた実証の知見も交えてお話しします。
+      </p>
+      <h3 class="text-xl font-bold mb-4 text-white">ご一緒する登壇者（登壇順）</h3>
+      <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-300">
+        <li>岡田 美保子 氏（一般社団法人医療データ活用基盤整備機構（IDIAL））「標準化はAI時代の共通言語である」</li>
+        <li>島原 佑基 氏（医療AI推進機構株式会社）「データが価値になる条件：医療AIの社会実装から逆算する」</li>
+        <li>吉原 博紀 氏（西村あさひ法律事務所・外国法共同事業）「医療データとAIの社会実装を支える法的・倫理的ガバナンス」</li>
+        <li>青木 美和 氏（医療情報基盤・診療報酬審査支払機構（旧社会保険診療報酬支払基金））「医療情報基盤・診療報酬審査支払機構（DX審査支払機構）への改組と本邦における医療情報基盤の展望」</li>
+      </ul>
+      <p class="mb-6">
+        座長：陣之内 将成（株式会社peaceful 代表取締役）、岡田 美保子 氏（オーガナイザー）
+      </p>
+      <p class="mt-8">
+        <a href="https://www.jcmi46.org/program.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼大会プログラムを見る
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        Masanari Jinnouchi, CEO of peaceful Inc., will chair and speak at a panel discussion at the 46th Joint Conference on Medical Informatics (the 27th Annual Meeting of the Japan Association for Medical Informatics).
+      </p>
+      <p class="mb-6">
+        Panel Discussion 5<br>
+        From Data to Value: Standardized Healthcare Data Infrastructure and the Path Forward with AI<br>
+        Date: Saturday, November 14, 2026, 9:10-11:10<br>
+        Venue: Sapporo Convention Center, Room D
+      </p>
+      <p class="mb-6">
+        While the use of real-world data (RWD) in Japan has advanced, data originating from nursing has been largely left out. Much of what nurses, who are closest to patients, observe and judge is lost before it is ever recorded, and the records that remain have barely entered the frameworks for secondary use. In his presentation, Jinnouchi will discuss how to collect this untapped data from clinical practice and turn it into data that AI can use, drawing on our proof-of-concept work with wearable devices on an acute-care hospital ward.
+      </p>
+      <h3 class="text-xl font-bold mb-4 text-white">Panelists (in order of presentation)</h3>
+      <ul class="list-disc pl-5 mb-6 space-y-2 text-gray-300">
+        <li>Mihoko Okada (IDIAL)</li>
+        <li>Yuki Shimahara (MAPI Inc.)</li>
+        <li>Hiroki Yoshihara (Nishimura & Asahi)</li>
+        <li>Miwa Aoki (Japan's national organization for health information infrastructure and claims review, formerly the Health Insurance Claims Review & Reimbursement Services)</li>
+      </ul>
+      <p class="mb-6">
+        Chairs: Masanari Jinnouchi (peaceful Inc.) and Mihoko Okada (IDIAL, organizer)
+      </p>
+      <p class="mt-8">
+        <a href="https://www.jcmi46.org/program.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼View the conference program
+        </a>
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
