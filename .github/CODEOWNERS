@@ -1,4 +1,4 @@
-# MJ 2026-10-28: 新規患者情報送信・鍵/権限/ログイン/WAF・本番配備。
+# MJ 2026-10-28: 新規患者情報送信・鍵/権限/ログイン/WAF・本番配備・AIを縛る決まり。
 # 場所に関係なく両確認役も判定。新画面はissue 18の写真とMJ確認を待つ。
 # この方針導入PRはMJが1回承認。GitHubの規則は変更しない。
 
@@ -28,3 +28,11 @@
 **/*Deploy* @masanarijinnouchi-lgtm
 /vercel.json @masanarijinnouchi-lgtm
 /peaceful-corporate/vercel.json @masanarijinnouchi-lgtm
+
+# MJ 2026-10-28 22:04: AIを縛る決まりと指定の公開方針はMJが承認する。
+/AGENTS.md @masanarijinnouchi-lgtm
+/CLAUDE.md @masanarijinnouchi-lgtm
+/.github/ @masanarijinnouchi-lgtm
+**/*review*rules* @masanarijinnouchi-lgtm
+**/*review*policy* @masanarijinnouchi-lgtm
+/peaceful-corporate/app/**/nurvis/privacy/ @masanarijinnouchi-lgtm
