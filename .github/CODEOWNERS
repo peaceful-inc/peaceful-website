@@ -1,30 +1,38 @@
-# MJ が見るもの（2026-10-11、MJ 決定）：A「患者さんの安全と個人情報」と B「立て付け（骨組み）を変えるもの」の場所だけを、MJ の持ち物にする。
-# 持ち主を書かない場所は「持ち主なし」（MJ の承認は GitHub では要らない）。あとに書いた行が優先される。
-# C「大筋（プロダクトの方向）に触れるもの」は、場所では決まらない。PR ごとの Opus のレビューが「MJが見るべきか」を判断し、「はい」なら MJ に承認を頼む。
-# 持ち主なしの場所だけを変える PR で、Opus が「いいえ」と判断し、テストとチェックが通れば、自動で合流する（scripts/auto-merge.sh）。
-# この一覧は、KIPP が各リポジトリのコードから起こした。足りない場所・多すぎる場所は、MJ が PR で直す。迷ったら MJ の持ち物にする。
+# MJ 2026-10-28: 新規患者情報送信・鍵/権限/ログイン/WAF・本番配備・AIを縛る決まり。
+# 場所に関係なく両確認役も判定。新画面はissue 18の写真とMJ確認を待つ。
+# この方針導入PRはMJが1回承認。GitHubの規則は変更しない。
 
-# --- A：患者さんの安全・個人情報（ウェブサイト） ---
-/peaceful-corporate/app/**/nurvis/privacy/  @masanarijinnouchi-lgtm   # 各言語の NURVIS のプライバシー（個人情報の取り扱い）の文言
-*prompt*                                    @masanarijinnouchi-lgtm   # AI への指示（名前に prompt を含むもの）
-*secret*                                    @masanarijinnouchi-lgtm
-*auth*                                      @masanarijinnouchi-lgtm   # 認証（名前に auth を含むもの）
-*cognito*                                   @masanarijinnouchi-lgtm
-*credential*                                @masanarijinnouchi-lgtm
-.env*                                       @masanarijinnouchi-lgtm
-*.pem                                       @masanarijinnouchi-lgtm
+*secret* @masanarijinnouchi-lgtm
+*Secret* @masanarijinnouchi-lgtm
+*auth* @masanarijinnouchi-lgtm
+*Auth* @masanarijinnouchi-lgtm
+*cognito* @masanarijinnouchi-lgtm
+*Cognito* @masanarijinnouchi-lgtm
+*credential* @masanarijinnouchi-lgtm
+*Credential* @masanarijinnouchi-lgtm
+.env* @masanarijinnouchi-lgtm
+*.pem @masanarijinnouchi-lgtm
+*IAM* @masanarijinnouchi-lgtm
+*iam* @masanarijinnouchi-lgtm
+*WAF* @masanarijinnouchi-lgtm
+*waf* @masanarijinnouchi-lgtm
+*keychain* @masanarijinnouchi-lgtm
+*Keychain* @masanarijinnouchi-lgtm
+*TokenStore* @masanarijinnouchi-lgtm
+/.github/CODEOWNERS @masanarijinnouchi-lgtm
+**/*allowed*tools* @masanarijinnouchi-lgtm
+**/claude*-settings*.json @masanarijinnouchi-lgtm
+**/*branch-guard* @masanarijinnouchi-lgtm
+.gitleaks* @masanarijinnouchi-lgtm
+**/*deploy* @masanarijinnouchi-lgtm
+**/*Deploy* @masanarijinnouchi-lgtm
+/vercel.json @masanarijinnouchi-lgtm
+/peaceful-corporate/vercel.json @masanarijinnouchi-lgtm
 
-# --- B：立て付け（ウェブサイト） ---
-/peaceful-corporate/package.json            @masanarijinnouchi-lgtm   # 依存
-/peaceful-corporate/pnpm-lock.yaml          @masanarijinnouchi-lgtm
-/peaceful-corporate/next.config.mjs         @masanarijinnouchi-lgtm
-/peaceful-corporate/tsconfig.json           @masanarijinnouchi-lgtm
-/peaceful-corporate/postcss.config.mjs      @masanarijinnouchi-lgtm
-/peaceful-corporate/components.json         @masanarijinnouchi-lgtm
-/peaceful-corporate/vercel.json             @masanarijinnouchi-lgtm   # デプロイの設定
-/vercel.json                                @masanarijinnouchi-lgtm
-/docs/adr/                                  @masanarijinnouchi-lgtm   # 設計の決定記録
-CLAUDE.md                                   @masanarijinnouchi-lgtm
-AGENTS.md                                   @masanarijinnouchi-lgtm   # 作業の決まり
-.gitleaks*                                  @masanarijinnouchi-lgtm   # 秘密の値の点検の設定
-/.github/                                   @masanarijinnouchi-lgtm   # CI・仕組みの設定、CODEOWNERS 自身
+# MJ 2026-10-28 22:04: AIを縛る決まりと指定の公開方針はMJが承認する。
+/AGENTS.md @masanarijinnouchi-lgtm
+/CLAUDE.md @masanarijinnouchi-lgtm
+/.github/ @masanarijinnouchi-lgtm
+**/*review*rules* @masanarijinnouchi-lgtm
+**/*review*policy* @masanarijinnouchi-lgtm
+/peaceful-corporate/app/**/nurvis/privacy/ @masanarijinnouchi-lgtm
