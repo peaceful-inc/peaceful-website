@@ -43,7 +43,25 @@ export const pageMetadata = ({
       "x-default": path,
     }
   }
-  return { title, description, alternates }
+  const canonicalUrl = `${SITE_URL}${localizePath(lang, path)}`
+  return {
+    title,
+    description,
+    alternates,
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: canonicalUrl,
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "peaceful" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/og-image.png"],
+    },
+  }
 }
 
 // ニュース本文（HTML）の冒頭を、説明文用の文字だけにして取り出す
