@@ -6,13 +6,11 @@ export const dynamic = "force-static";
 function toRfc822Jst(dateStr: string): string {
   // dateStr: "YYYY.MM.DD"
   const [year, month, day] = dateStr.split(".").map(Number);
-  // JST midnight = UTC (year, month-1, day, 0, 0, 0) minus 9h = UTC prev day 15:00
-  // Use +0900 offset directly in output
+  // The weekday is that of the calendar date itself (the JST date in news-data).
+  // Using UTC midnight of the same date keeps it from shifting to the previous day.
+  // The time is written as 00:00:00 with the +0900 offset below.
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  // Build Date at JST midnight by using UTC 15:00 of the previous day
-  // Actually: JST 00:00 = UTC (day-1) 15:00, but easier to compute day of week via Date
-  const utcDate = new Date(Date.UTC(year, month - 1, day, 0, 0, 0) - 9 * 3600 * 1000);
-  const dayOfWeek = days[utcDate.getUTCDay()];
+  const dayOfWeek = days[new Date(Date.UTC(year, month - 1, day)).getUTCDay()];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const dd = String(day).padStart(2, "0");
   const mon = months[month - 1];
