@@ -83,7 +83,8 @@
 | peaceful-corporate/public/videos/nurvis-intro-poster.jpg | 紹介動画の表紙の画像 | Product の動画の poster |
 | peaceful-corporate/public/images/hero/hero-bg.jpg、hero-fg.webp | トップのはじめの場面の2枚（イメージ動画の場面から作った画像と、NURVISの札） | トップ |
 | peaceful-corporate/public/fonts/pf-fix/ | 9字の書体（woff2 のファイル24個）、@font-face の書き方（pf-fix.css。unicode-range つき、url は /fonts/pf-fix/）、書体の使用の決まり（OFL.txt。SIL Open Font License 1.1） | 全ページ。pf-fix.css の中身を globals.css に入れる |
+| peaceful-corporate/public/fonts/shippori-mincho/ | しっぽり明朝の500・600・700（woff2 のファイル366個。fontsource の shippori-mincho 5.3.0 の物をそのまま置いた）、@font-face の書き方（shippori-mincho.css。unicode-range つき、url は /fonts/shippori-mincho/）、書体の使用の決まり（OFL.txt。SIL Open Font License 1.1） | 全ページ。shippori-mincho.css を、ページの head で読むか globals.css に入れる |
 | peaceful-corporate/public/logo.png | ロゴ（前からある物） | ヘッダー、フッター |
 | peaceful-corporate/public/nvidia-inception-badge.png | NVIDIA Inception のバッジ（前からある物） | 会社情報 |
 
-しっぽり明朝は、ページを見る人のブラウザからGoogle Fontsへつながないよう、npm の @fontsource/shippori-mincho（500・600・700）で読む。見本のページはGoogle Fontsから読んでいるが、本番では使わない。
+しっぽり明朝は、ページを見る人のブラウザからGoogle Fontsへつながないよう、peaceful-corporate/public/fonts/shippori-mincho/ のファイルから読む（npm のパッケージは足さない）。見本のページはGoogle Fontsから読んでいるが、本番では使わない。
