@@ -53,7 +53,7 @@ export default function NurvisPrivacyPage() {
             <div className="space-y-6 mt-4">
               <div>
                 <h3 className="font-bold mb-2">（1）マイクからの音声</h3>
-                <p className="mb-2">【収集方法】利用者が本アプリの録音機能を操作した際に、端末に接続された骨伝導イヤホン等のマイクを通じて取得します。</p>
+                <p className="mb-2">【収集方法】利用者が本アプリの録音機能を操作した際に、端末または端末に接続したイヤホン等のマイクを通じて取得します。</p>
                 <p className="mb-2">【利用目的】看護記録の作成支援およびAIへの質問入力のために使用します。</p>
                 <p>音声はすべて端末内で文字に変換され、音声データそのものが当社のサーバーへ送信されることはありません。端末内の音声および変換直後のテキスト（生データ）は、24時間以内に自動削除されます。</p>
               </div>
@@ -145,7 +145,7 @@ export default function NurvisPrivacyPage() {
 
           <div className="mt-12 pt-8 text-right text-gray-600">
             <p>制定日：2026年7月6日</p>
-            <p className="mt-1">最終更新日：2026年7月25日</p>
+            <p className="mt-1">最終更新日：2026年10月31日</p>
             <p className="mt-4">株式会社peaceful</p>
           </div>
         </div>
