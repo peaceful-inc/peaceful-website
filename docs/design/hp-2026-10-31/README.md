@@ -76,11 +76,33 @@
 
 ## 素材
 
-| ファイル | 中身 | 使う所 |
+本番で使う素材は、このブランチの中で、置く場所にすでに置いてある。作業のブランチには、下の「取り出し方」の git の命令で取り出す（コピーの道具は要らない）。assets/ の中の物は、見本のページを開くための写し。
+
+| 置く場所（このブランチの中） | 中身 | 使う所 |
 |---|---|---|
-| assets/peaceful-logo.png | ロゴ。今の peaceful-corporate/public/logo.png と同じファイル | ヘッダー、フッター |
-| assets/hero-bg.jpg、assets/hero-fg.webp | トップのはじめの場面の2枚（イメージ動画の場面から作った画像と、NURVISの札） | トップ |
-| assets/nvidia-inception-badge.png | 今の peaceful-corporate/public/nvidia-inception-badge.png と同じファイル | 会社情報 |
-| assets/nurvis-intro.mp4 | NURVISの紹介動画（2分14秒、音声なし、約6.4MB） | Product。controls、muted、playsinline、preload="metadata" を付け、自動では再生しない |
-| assets/nurvis-intro-poster.jpg | 紹介動画の表紙の画像 | Product の動画の poster |
-| assets/pf-fix/ | 9字の書体（woff2 のファイル24個）、@font-face の書き方（pf-fix.css）、書体の使用の決まり（OFL.txt。SIL Open Font License 1.1） | 全ページ |
+| peaceful-corporate/public/videos/nurvis-intro.mp4 | NURVISの紹介動画（2分14秒、音声なし、約6.4MB） | Product。controls、muted、playsinline、preload="metadata" を付け、自動では再生しない |
+| peaceful-corporate/public/videos/nurvis-intro-poster.jpg | 紹介動画の表紙の画像 | Product の動画の poster |
+| peaceful-corporate/public/images/hero/hero-bg.jpg、hero-fg.webp | トップのはじめの場面の2枚（イメージ動画の場面から作った画像と、NURVISの札） | トップ |
+| peaceful-corporate/public/fonts/pf-fix/ | 9字の書体（woff2 のファイル24個）、@font-face の書き方（pf-fix.css。unicode-range つき、url は /fonts/pf-fix/）、書体の使用の決まり（OFL.txt。SIL Open Font License 1.1） | 全ページ。pf-fix.css の中身を globals.css に入れる |
+| （今のmainにある）peaceful-corporate/public/logo.png | ロゴ。assets/peaceful-logo.png と同じファイル | ヘッダー、フッター |
+| （今のmainにある）peaceful-corporate/public/nvidia-inception-badge.png | assets/nvidia-inception-badge.png と同じファイル | 会社情報 |
+
+しっぽり明朝は、ページを見る人のブラウザからGoogle Fontsへつながないよう、npm の @fontsource/shippori-mincho（500・600・700）で読む。見本のページはGoogle Fontsから読んでいるが、本番では使わない。
+
+## 取り出し方（作業のブランチで行う）
+
+```bash
+git fetch origin design/hp-2026-10-31
+# 素材を、置く場所に取り出す（このあと git add してPRに入れる）
+git checkout origin/design/hp-2026-10-31 -- \
+  peaceful-corporate/public/videos/nurvis-intro.mp4 \
+  peaceful-corporate/public/videos/nurvis-intro-poster.jpg \
+  peaceful-corporate/public/images/hero \
+  peaceful-corporate/public/fonts/pf-fix
+# 見本を読む（作業のブランチには入れない）
+git show origin/design/hp-2026-10-31:docs/design/hp-2026-10-31/README.md
+git show origin/design/hp-2026-10-31:docs/design/hp-2026-10-31/ai-text.md
+git show origin/design/hp-2026-10-31:docs/design/hp-2026-10-31/pages/top.html
+```
+
+pages/ のほかのページ、screens/ の写真も、同じ形の git show で読める。docs/design/hp-2026-10-31/ は、作業のブランチとPRに入れない。
