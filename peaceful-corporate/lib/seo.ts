@@ -79,8 +79,8 @@ export const ORGANIZATION_ID = `${SITE_URL}/#organization`
 export const FOUNDER_ID = `${SITE_URL}/company#founder`
 
 const organizationDescription = {
-  ja: "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を開発しています。NURVISは、看護師がケアをしながら話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確かめられるようにします。",
-  en: "peaceful Inc. develops NURVIS, a wearable AI agent system for nurses. It drafts nursing records from what nurses say during care and lets them check procedures and drug information on the spot.",
+  ja: "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を開発しています。NURVISは、看護の仕事を包括的に支える、看護師のパートナーです。",
+  en: "peaceful Inc. develops NURVIS, a wearable AI agent system for nurses. NURVIS is a partner for nurses that provides comprehensive support for nursing work.",
 }
 
 // 会社ページに出している住所と同じ内容
@@ -114,6 +114,21 @@ export const organizationJsonLd = (lang: Lang) => ({
   description: organizationDescription[lang],
   address: address[lang],
   iso6523Code: "0188:7011601029057",
+  identifier: "7011601029057",
+  memberOf: [
+    {
+      "@type": "Organization",
+      name: "日本デジタルヘルス・アライアンス（JaDHA）",
+    },
+    {
+      "@type": "Organization",
+      name: "一般社団法人日本病院DX推進協会",
+    },
+  ],
+  sameAs: [
+    "https://www.linkedin.com/company/peaceful-inc",
+    "https://www.facebook.com/profile.php?id=61595960253630",
+  ],
   foundingDate: "2025-10-01",
   founder: {
     "@type": "Person",
@@ -124,6 +139,11 @@ export const organizationJsonLd = (lang: Lang) => ({
       lang === "ja"
         ? "代表取締役／看護師"
         : "Representative Director & CEO / Registered Nurse",
+    description:
+      lang === "ja"
+        ? "救急・ICU・脳神経外科の看護師として5年、CRA・Study Managerとして臨床開発に約8年従事し、2025年10月に株式会社peacefulを創業。日本デジタルヘルス・アライアンス（JaDHA）薬事・診療報酬制度の在り方検討委員会 副委員長、DIA日本年会2026 プログラム委員"
+        : "He worked as a nurse in emergency care, intensive care and neurosurgery for five years, and in clinical development as a CRA and Study Manager for approximately eight years. He founded peaceful Inc. in October 2025. He is Vice Chair of the Japan Digital Health Alliance (JaDHA) committee examining regulatory affairs and medical reimbursement systems, and a program committee member for the DIA Japan Annual Meeting 2026.",
+    sameAs: ["https://jp.linkedin.com/in/mjinnouchi"],
     url: `${SITE_URL}/company`,
   },
   brand: {
