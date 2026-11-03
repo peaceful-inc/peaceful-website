@@ -426,6 +426,55 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "15",
+    title: "【11/5発表】第14回プラチナ大賞で「プラチナチャレンジング賞」を受賞しました",
+    titleEn: "[Award] Received the Platinum Challenging Award at the 14th Platinum Taisho",
+    date: "2026.11.03",
+    category: "Award",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を用いた取り組み「看護師向けウェアラブルAIエージェント『NURVIS』による医療現場の時間創出と地域医療持続モデルの構築」で、第14回プラチナ大賞（主催：一般社団法人プラチナ構想ネットワーク、プラチナ大賞運営委員会）の「プラチナチャレンジング賞」を受賞しました。
+      </p>
+      <p class="mb-6">
+        プラチナチャレンジング賞は、大賞と優秀賞とは別に、きわめて先進的・革新的なアイディア、技術及び仕組みをもって「プラチナ社会」を加速させる可能性があり、期待できるモデルとして、プラチナ大賞審査委員会が選定する賞です。第14回は、全52件の応募の中から2件が選ばれました。
+      </p>
+      <p class="mb-6">
+        2026年11月5日（木）の最終審査発表会・表彰式（時事通信ホール）で、代表取締役の陣之内 将成が取り組みを発表します（15:43ごろの予定）。当日の様子はYouTube Liveで配信され、どなたでも無料でご覧いただけます（12:45から配信）。
+      </p>
+      <p class="mt-8">
+        <a href="https://www.youtube.com/live/NLnG_aLQowU" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼配信を見る（YouTube）
+        </a>
+      </p>
+      <p class="mt-4">
+        <a href="https://prtimes.jp/main/html/rd/p/000000003.000185645.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼プレスリリースを見る（PR TIMES）
+        </a>
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful inc. has received the Platinum Challenging Award at the 14th Platinum Taisho, a Japanese award that honors initiatives by local governments and companies solving social and regional challenges. The award was given to our initiative to create time in clinical settings and build a sustainable community healthcare model with NURVIS, a wearable AI agent system for nurses.
+      </p>
+      <p class="mb-6">
+        The Platinum Challenging Award is selected by the Platinum Taisho judging committee, separately from the Grand Prize and Excellence Awards, for highly advanced and innovative models with the potential to accelerate a "Platinum Society." Two initiatives were selected from 52 entries this year.
+      </p>
+      <p class="mb-6">
+        Our CEO, Masanari Jinnouchi, will present the initiative at the final presentation and award ceremony at Jiji Press Hall in Tokyo on Thursday, November 5, 2026 (scheduled around 15:43 JST). The event will be streamed live on YouTube, free of charge, from 12:45 JST.
+      </p>
+      <p class="mt-8">
+        <a href="https://www.youtube.com/live/NLnG_aLQowU" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼Watch the live stream (YouTube)
+        </a>
+      </p>
+      <p class="mt-4">
+        <a href="https://prtimes.jp/main/html/rd/p/000000003.000185645.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-neon-blue text-black font-bold py-3 px-8 rounded-full hover:bg-white transition-colors duration-300">
+          ▼View the press release (Japanese)
+        </a>
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
