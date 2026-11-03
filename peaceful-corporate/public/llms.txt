@@ -4,25 +4,52 @@
 
 - 法人番号：7011601029057
 - 代表取締役：陣之内 将成
+- 設立：2025年10月1日
+- 所在地：東京都品川区東品川2-6-4 寺田倉庫G1ビル 2階
+- 加盟団体：日本デジタルヘルス・アライアンス（JaDHA）、一般社団法人日本病院DX推進協会
 - 記載の内容は掲載時点のものです。仕様は予告なく変更することがあります。
 
 ## NURVIS
 
-- [NURVIS](https://www.peaceful-inc.com/product): 骨伝導イヤホンとスマートフォンを通じて看護師が身につけるAIエージェント。看護師がケアをしながら話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確かめられるようにする。名前などを端末の中で伏せてからクラウドへ送り、整えた記録は看護師が確認して電子カルテに貼り付ける。記録の確定と臨床判断は看護師が行う。2026年8月に洛和会丸太町病院（京都市）との共同実証を開始した
+- [NURVIS](https://www.peaceful-inc.com/product): ウェアラブルデバイスによる看護師向けAIエージェントシステム。骨伝導イヤホンとスマートフォンで身につけ、看護の仕事を包括的に支える。看護手順の確認や会議の議事録づくりを任せられ、その日の段取りを組む機能は開発中。2026年8月に洛和会丸太町病院（京都市）との共同実証を開始した
+- 患者さんの情報の扱い：名前などの個人情報は伏せてから扱い、データは国内で保管する。お預かりした情報は、病院との契約で決めた目的の範囲で使う
 - [NURVISのプライバシーポリシー](https://www.peaceful-inc.com/nurvis/privacy)
+- [情報セキュリティ基本方針](https://www.peaceful-inc.com/security-policy)
 
 ## 会社
 
-- [Vision](https://www.peaceful-inc.com/vision): 看護の現場を支え、看護の知見を残し、医療の届け方を変える取り組みと、GIGA-HOSPITAL構想を紹介している
-- [研究](https://www.peaceful-inc.com/research): 2026年9月から、看護師の一人称視点（エゴセントリック）動画データを集めて構造化している。実際の患者は撮影せず、看護師資格を持つ自社メンバーが模擬環境で看護ケアを実演する。NURVISの開発と並行して進める別の取り組み
-- [会社情報](https://www.peaceful-inc.com/company): 会社概要と代表の経歴
+- [Vision](https://www.peaceful-inc.com/vision): 看護の現場に入り、現場で使いながらNURVISを作り、看護の判断とケアをデータに残す進め方と、GIGA-HOSPITAL構想を紹介している
+- [研究](https://www.peaceful-inc.com/research): 2026年9月から、看護師の一人称視点（エゴセントリック）動画データの収集と構造化に取り組んでいる。実際の患者さんを撮影するのではなく、看護師資格を持つ自社メンバーが模擬環境で看護ケアを実演する。NURVISの開発と並行して進める取り組み
+- [会社情報](https://www.peaceful-inc.com/company): 会社概要、代表の経歴、これまでの歩み
+
+## 代表
+
+- 陣之内 将成（代表取締役／看護師）：救急・ICU・脳神経外科の看護師として5年、CRA・Study Managerとして臨床開発に約8年従事し、2025年10月に株式会社peacefulを創業。日本デジタルヘルス・アライアンス（JaDHA）薬事・診療報酬制度の在り方検討委員会 副委員長、DIA日本年会2026 プログラム委員
+
+## これまでの歩み
+
+- 2025年10月：株式会社peacefulを設立
+- 2025年11月：三菱総合研究所「未来共創イニシアティブ（ICF）」参画
+- 2025年11月：神戸市「Be start KOBE」採択
+- 2026年3月：DIA Global Forumに共著記事が掲載
+- 2026年7月：寺田倉庫「Creation Camp TENNOZ」第3期 採択
+- 2026年8月：NVIDIA Inception Program 採択
+- 2026年8月：洛和会丸太町病院でNURVISの実証を開始
+- 2026年9月：エゴセントリック看護データの収集と構造化に着手
 
 ## ニュース
 
 - [ニュース一覧](https://www.peaceful-inc.com/news)
+- [【11/14登壇】第46回医療情報学連合大会の公募パネルディスカッションで座長と演者を務めます](https://www.peaceful-inc.com/news/14): 2026年10月26日
 - [エゴセントリック看護データの収集と構造化に着手](https://www.peaceful-inc.com/news/13): 2026年9月21日
 - [看護師向けAIエージェント「NURVIS」洛和会丸太町病院で実証を開始](https://www.peaceful-inc.com/news/12): 2026年9月1日
 - [NVIDIA Inception Programに採択されました](https://www.peaceful-inc.com/news/11): 2026年8月4日
+- [寺田倉庫「Creation Camp TENNOZ」第3期に採択](https://www.peaceful-inc.com/news/10): 2026年7月17日
+- [DIA Global Forumに共著記事が掲載されました](https://www.peaceful-inc.com/news/9): 2026年3月1日
+- [【2/13開催】異業種に学ぶこれからの医療 - 医療経営×データの実装論](https://www.peaceful-inc.com/news/8): 2026年1月24日
+- [神戸市主催アクセラレーター『Be start KOBE』に採択](https://www.peaceful-inc.com/news/3): 2025年11月27日
+- [三菱総合研究所『未来共創イニシアティブ(ICF)』に参画](https://www.peaceful-inc.com/news/2): 2025年11月6日
+- [株式会社peaceful 設立](https://www.peaceful-inc.com/news/1): 2025年10月1日
 
 ## お問い合わせ
 
