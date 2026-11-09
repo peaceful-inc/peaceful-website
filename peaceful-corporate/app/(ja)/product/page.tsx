@@ -9,7 +9,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/product",
   title: "NURVIS｜看護師向けAIエージェント｜peaceful",
   description:
-    "骨伝導イヤホンとスマートフォンで身につける看護師向けAIエージェントNURVIS。話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確認できます。",
+    "骨伝導イヤホンとスマートフォンで身につける看護師向けAIエージェントNURVIS（ナービス）。話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確認できます。",
 })
 
 export default function ProductPage() {

@@ -55,7 +55,16 @@ export default function ServicesSection() {
                         style={{ transitionDelay: "300ms" }}
                     >
                         <div>
-                            <h3 className="mb-4 text-3xl font-bold text-neon-blue group-hover:text-white transition-colors">NURVIS</h3>
+                            <h3 className="mb-4 text-3xl font-bold text-neon-blue group-hover:text-white transition-colors">
+                                {lang === 'ja' ? (
+                                    <ruby>
+                                        NURVIS
+                                        <rt className="text-xs font-normal tracking-[0.1em]" style={{ rubyAlign: "center" }}>ナービス</rt>
+                                    </ruby>
+                                ) : (
+                                    'NURVIS'
+                                )}
+                            </h3>
                             <h4 className="mb-2 text-xl font-semibold text-white">
                                 {lang === 'ja' ? '看護師向けウェアラブルAIエージェント' : 'Wearable AI Agent for Nurses'}
                             </h4>
