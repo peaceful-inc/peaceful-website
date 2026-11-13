@@ -26,7 +26,14 @@ export default function ProductContent() {
               : "none",
           }}
         >
-          NURVIS
+          {lang === "ja" ? (
+            <ruby>
+              NURVIS
+              <rt className="text-sm md:text-base lg:text-lg font-normal tracking-[0.1em]" style={{ rubyAlign: "center" }}>ナービス</rt>
+            </ruby>
+          ) : (
+            "NURVIS"
+          )}
           <br />
           <span className="text-3xl md:text-4xl lg:text-5xl">
             {lang === "ja"
