@@ -1,0 +1,14 @@
+/* 白と金のページで共通に使う物。Tailwind の初期化（img の max-width など）を、見本のブラウザの初期の形に戻す */
+.pg img,.pg video{max-width:none}
+
+/* スマートフォンの幅のメニュー（見本の Menu）。色は見本の8色だけを使う */
+.pg .nav button.menu{font:inherit;letter-spacing:inherit;color:var(--pf-ink);background:none;border:0;padding:12px 0;cursor:pointer}
+.pg .nav button.menu:hover{color:var(--pf-gold)}
+.pg .hp-menu{position:fixed;inset:0;z-index:50;background:var(--pf-white);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow-y:auto}
+.pg .hp-menu[hidden]{display:none}
+.pg .hp-menu-close{position:absolute;top:clamp(22px,3vw,38px);right:var(--pad);display:flex;padding:8px;background:none;border:0;color:var(--pf-ink);cursor:pointer}
+.pg .hp-menu-close:hover{color:var(--pf-gold)}
+.pg .hp-menu ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;align-items:center;gap:28px;font-size:22px;letter-spacing:.08em}
+.pg .hp-menu a{text-decoration:none;padding:4px 0}
+.pg .hp-menu a.cur{border-bottom:1px solid}
+.pg .hp-menu .hp-menu-lang{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:16px}

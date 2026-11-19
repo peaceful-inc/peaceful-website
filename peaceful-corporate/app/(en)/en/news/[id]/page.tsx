@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { newsData } from "@/lib/news-data"
-import NewsDetailContent from "@/components/news-detail-content"
+import NewsArticlePage from "@/components/hp/news-article"
 import JsonLd from "@/components/json-ld"
 import { newsArticleJsonLd, pageMetadata, plainTextSummary } from "@/lib/seo"
 
@@ -42,7 +42,7 @@ export default async function NewsDetailPageEn({ params }: NewsDetailPageProps) 
     return (
         <>
             <JsonLd data={newsArticleJsonLd("en", newsItem)} />
-            <NewsDetailContent newsItem={newsItem} />
+            <NewsArticlePage lang="en" item={newsItem} />
         </>
     )
 }

@@ -1,0 +1,72 @@
+/* docs/design/hp-2026-10-31/pages/security-policy.html の CSS（.hp-security-policy の中だけに効く） */
+
+
+.hp-security-policy a{color:var(--pf-ink)}.hp-security-policy a:hover{color:var(--pf-gold)}
+.hp-security-policy.pg{--pad:clamp(20px,6.667vw,96px);width:100%;background:var(--pf-white);color:var(--pf-ink);font-family:'pf-fix','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;font-size:18px;line-height:2;letter-spacing:.04em;font-variant-numeric:lining-nums}
+.hp-security-policy .in{max-width:1440px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);box-sizing:border-box}
+.hp-security-policy p{margin:0}
+
+.hp-security-policy .hd{display:flex;align-items:center;justify-content:space-between;gap:24px;height:clamp(72px,7.222vw,104px)}
+.hp-security-policy .hd-logo{display:flex;align-items:center}
+.hp-security-policy .hd-logo img{display:block;height:clamp(32px,3.333vw,48px);width:auto}
+.hp-security-policy .nav{display:flex;align-items:center;gap:clamp(18px,3.056vw,44px);font-size:16px;font-weight:500;letter-spacing:.08em}
+.hp-security-policy .nav a{text-decoration:none;padding:12px 0}
+.hp-security-policy .nav a.cur{padding:4px 0;border-bottom:1px solid}
+.hp-security-policy .lang{display:flex;align-items:center;gap:10px;font-size:14px}
+.hp-security-policy .nav .menu{display:none}
+.hp-security-policy .nav .contact{padding:4px 0;border-bottom:1px solid}
+
+.hp-security-policy .head{padding-top:clamp(64px,8.333vw,120px)}
+.hp-security-policy .ttl{margin:0;font-weight:600;font-size:clamp(36px,5vw,72px);line-height:1.4;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-security-policy .sub{margin:clamp(20px,2.222vw,32px) 0 0;font-weight:600;font-size:clamp(19px,1.944vw,28px);line-height:1.6;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-security-policy .lead-p{margin-top:clamp(32px,3.333vw,48px);max-width:36em;text-wrap:pretty}
+
+.hp-security-policy .sec{padding-top:clamp(88px,12.5vw,180px)}
+.hp-security-policy .sec-h{margin-bottom:clamp(32px,3.889vw,56px)}
+.hp-security-policy .sec-h h2{margin:0;font-weight:600;font-size:clamp(26px,2.5vw,36px);line-height:1.4;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-security-policy .body-p{max-width:40em;text-wrap:pretty}
+.hp-security-policy .more{display:inline-block;margin-top:24px;text-decoration:none;font-size:16px;letter-spacing:.04em;padding:4px 0;border-bottom:1px solid}
+
+.hp-security-policy .lst{display:flex;flex-direction:column}
+.hp-security-policy .lst p{padding:clamp(20px,2.222vw,32px) 0;border-top:1px solid rgba(156,161,165,.35);font-size:17px;line-height:2;word-break:auto-phrase;text-wrap:balance}
+.hp-security-policy .lst p:last-child{border-bottom:1px solid rgba(156,161,165,.35)}
+
+.hp-security-policy .rows{display:flex;flex-direction:column}
+.hp-security-policy .r2{display:grid;grid-template-columns:minmax(0,400fr) minmax(0,848fr);column-gap:24px;row-gap:6px;align-items:baseline;padding:clamp(24px,2.5vw,36px) 0;border-top:1px solid rgba(156,161,165,.35);text-decoration:none}
+.hp-security-policy .r2:last-child{border-bottom:1px solid rgba(156,161,165,.35)}
+.hp-security-policy .r2 .k{font-size:16px;color:var(--pf-warm-gray);letter-spacing:.06em}
+.hp-security-policy .r2 .v{font-size:17px;line-height:2;color:var(--pf-ink);word-break:auto-phrase;text-wrap:pretty}
+.hp-security-policy a.r2 .v{text-decoration:none}
+
+.hp-security-policy .end{padding-bottom:clamp(96px,13.333vw,192px)}
+
+.hp-security-policy .ft{display:flex;flex-direction:column;gap:28px;padding:clamp(40px,3.889vw,56px) 0 clamp(44px,4.444vw,64px)}
+.hp-security-policy .ft-a{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 48px}
+.hp-security-policy .ft-a img{display:block;height:26px;width:auto}
+.hp-security-policy .ft-nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px 32px;font-size:14px}
+.hp-security-policy .ft-nav a{text-decoration:none;padding:8px 0;color:var(--pf-warm-gray)}
+.hp-security-policy .ft-b{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 48px;font-size:14px;color:var(--pf-warm-gray)}
+.hp-security-policy .pol{margin-top:clamp(48px,5.556vw,80px);display:flex;flex-direction:column}
+.hp-security-policy .pi{display:grid;grid-template-columns:minmax(0,400fr) minmax(0,848fr);column-gap:24px;row-gap:8px;align-items:baseline;padding:clamp(24px,2.5vw,36px) 0;border-top:1px solid rgba(156,161,165,.35)}
+.hp-security-policy .pi:last-child{border-bottom:1px solid rgba(156,161,165,.35)}
+.hp-security-policy .pi h2{margin:0;font-weight:600;font-size:clamp(19px,1.667vw,24px);line-height:1.6;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-security-policy .pi h2 span{display:inline-block;min-width:1.6em;color:var(--pf-warm-gray);font-weight:500}
+.hp-security-policy .pi p{font-size:17px;line-height:2;color:var(--pf-ink);max-width:40em;text-wrap:pretty}
+.hp-security-policy .sign{margin-top:clamp(40px,4.444vw,64px);text-align:right;font-size:16px;color:var(--pf-warm-gray);line-height:2}
+@media (max-width:760px){.hp-security-policy .pi{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:860px){
+.hp-security-policy .nav .pl{display:none}
+.hp-security-policy .nav .menu{display:inline}
+}
+@media (max-width:760px){
+.hp-security-policy .r2{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+.hp-security-policy .lang{display:none}
+}
+.hp-security-policy .ttl-e{margin:clamp(12px,1.111vw,16px) 0 0;font-size:clamp(15px,1.25vw,18px);line-height:1.6;letter-spacing:.02em;color:var(--pf-warm-gray)}
+.hp-security-policy .sec-h .h-e{margin:6px 0 0;font-size:clamp(15px,1.25vw,18px);line-height:1.6;letter-spacing:.02em;color:var(--pf-warm-gray)}
+.hp-security-policy .bandw{line-height:0}
+.hp-security-policy .band{display:block;width:100%;height:32px}
+.hp-security-policy .bh{margin-top:clamp(48px,5.556vw,80px)}
+@media (max-width:600px){.hp-security-policy .band{height:24px}}
