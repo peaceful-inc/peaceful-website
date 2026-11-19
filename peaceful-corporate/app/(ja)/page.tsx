@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/",
   title: "株式会社peaceful｜看護師向けAIエージェント「NURVIS」",
   description:
-    "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を開発しています。NURVISは、看護の仕事を包括的に支える、看護師のパートナーです。",
+    "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS（ナービス）」を開発しています。NURVISは、看護の仕事を包括的に支える、看護師のパートナーです。",
   llmsLink: true,
 })
 

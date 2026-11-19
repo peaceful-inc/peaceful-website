@@ -6,6 +6,7 @@ import SiteFooter from "@/components/hp/site-footer"
 import Band from "@/components/hp/band"
 import ProductFigure from "@/components/hp/product-figure"
 import SecH from "@/components/hp/sec-h"
+import NurvisYomi from "@/components/hp/nurvis-yomi"
 import { productFaq } from "@/components/hp/product-faq"
 import { CONTACT_URL, PRIVACY_PATH, SECURITY_POLICY_PATH } from "@/components/hp/links"
 import "@/components/hp/css/product.css"
@@ -21,7 +22,9 @@ export default function ProductPage({ lang }: { lang: Lang }) {
         <SiteHeader lang={lang} current="product" />
 
         <section aria-label="NURVIS" className="head">
-          <h1 className="ttl">NURVIS</h1>
+          <h1 className="ttl">
+            <NurvisYomi ja={ja} />
+          </h1>
           {ja ? (
             <>
               <p className="sub">看護師が身につけるAIエージェント</p>
@@ -90,13 +93,13 @@ export default function ProductPage({ lang }: { lang: Lang }) {
           <div>
             {(ja
               ? [
-                  { h: "看護手順と薬剤情報をその場で確かめる", t: "看護手順や薬剤情報を、声で問いかけて確かめられます。答えには出典が添えられます。" },
+                  { h: "看護手順と薬剤情報をその場で確かめる", dev: "（開発中）", t: "看護手順や薬剤情報を、声で問いかけて確かめられます。答えには出典が添えられます。" },
                   { h: "一日の業務を組み立てる", dev: "（開発中）", t: "その日の業務の流れを、時間に沿って組み立てて管理します。" },
                   { h: "会議の話をまとめる", t: "カンファレンスや会議の話を文字にし、議事録の形にまとめます。" },
                   { h: "記録の文章に整える", t: "話した内容をその場で文字にし、看護記録の文章に整えます。看護師が確認して、電子カルテに貼り付けます。" },
                 ]
               : [
-                  { h: "Check procedures and drug information on the spot", t: "Ask about nursing procedures and drug information by voice. Answers come with their sources." },
+                  { h: "Check procedures and drug information on the spot", dev: " (in development)", t: "Ask about nursing procedures and drug information by voice. Answers come with their sources." },
                   { h: "Plan the day's work", dev: " (in development)", t: "Lays out the flow of the day's work along a timeline and helps you manage it." },
                   { h: "Summarize meetings", t: "Transcribes conferences and meetings and organizes them into minutes." },
                   { h: "Shape speech into record text", t: "What you say is transcribed on the spot and shaped into nursing-record text. Nurses review it and paste it into the electronic health record." },

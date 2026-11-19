@@ -12,3 +12,8 @@
 .pg .hp-menu a{text-decoration:none;padding:4px 0}
 .pg .hp-menu a.cur{border-bottom:1px solid}
 .pg .hp-menu .hp-menu-lang{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:16px}
+
+/* NURVIS の読みのルビ */
+.pg ruby.yomi{ruby-align:center}
+.pg ruby.yomi rt{font-size:max(12px,.22em);font-weight:500;letter-spacing:.1em;line-height:1.2;color:var(--pf-warm-gray)}
+.pg .row .n ruby.yomi rt{font-size:max(12px,.32em)}

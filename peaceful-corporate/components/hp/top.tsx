@@ -6,6 +6,7 @@ import SiteFooter from "@/components/hp/site-footer"
 import Band from "@/components/hp/band"
 import LeadReveal from "@/components/hp/lead-reveal"
 import ProductFigure from "@/components/hp/product-figure"
+import NurvisYomi from "@/components/hp/nurvis-yomi"
 import "@/components/hp/css/top.css"
 
 const gold = { borderColor: "var(--pf-gold)" }
@@ -30,7 +31,9 @@ export default function TopPage({ lang }: { lang: Lang }) {
           <p className="pill">{ja ? "イメージ映像" : "Image footage"}</p>
         </div>
         <div className="card">
-          <p className="card-w">NURVIS</p>
+          <p className="card-w">
+            <NurvisYomi ja={ja} />
+          </p>
           <div className="card-r" aria-hidden="true" style={{ background: "var(--pf-gold)" }}></div>
           {ja ? (
             <>
@@ -148,7 +151,7 @@ export default function TopPage({ lang }: { lang: Lang }) {
               ]
           ).map((row: { href: string; n: string; s: string; e?: string }) => (
             <Link key={row.href} href={p(row.href)} className="row">
-              <span className="n">{row.n}</span>
+              <span className="n">{row.n === "NURVIS" ? <NurvisYomi ja={ja} /> : row.n}</span>
               <span className="s">
                 <span>{row.s}</span>
                 {row.e && (
