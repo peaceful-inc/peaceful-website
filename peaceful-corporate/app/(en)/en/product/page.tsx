@@ -1,23 +1,22 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import ParticleBackground from "@/components/particle-background"
-import ProductContent from "@/components/product-content"
 import { pageMetadata } from "@/lib/seo"
+import JsonLd from "@/components/json-ld"
+import NurvisPage from "@/components/hp/product"
+import { productFaqJsonLd } from "@/components/hp/product-faq"
 
 export const metadata: Metadata = pageMetadata({
   lang: "en",
   path: "/product",
   title: "NURVIS | AI Agent for Nurses | peaceful",
   description:
-    "NURVIS is an AI agent for nurses, worn through a bone-conduction earphone and a smartphone. It turns what nurses say into nursing-record text and lets them check procedures and drug information on the spot.",
+    "NURVIS is a wearable AI agent system for nurses. You can leave it to check nursing procedures or to prepare meeting minutes. A feature that plans the day's work is in development.",
 })
 
 export default function ProductPageEn() {
   return (
-    <main className="relative min-h-screen bg-background text-foreground">
-      <ParticleBackground />
-      <Header />
-      <ProductContent />
-    </main>
+    <>
+      <JsonLd data={productFaqJsonLd("en")} />
+      <NurvisPage lang="en" />
+    </>
   )
 }

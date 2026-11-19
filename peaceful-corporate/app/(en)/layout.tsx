@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "peaceful Inc. | NURVIS, an AI agent for nurses",
   description:
-    "peaceful Inc. develops NURVIS, a wearable AI agent system for nurses. It drafts nursing records from what nurses say during care and lets them check procedures and drug information on the spot.",
+    "peaceful Inc. develops NURVIS, a wearable AI agent system for nurses. NURVIS is a partner for nurses that supports their work comprehensively.",
   generator: "v0.app",
 }
 
