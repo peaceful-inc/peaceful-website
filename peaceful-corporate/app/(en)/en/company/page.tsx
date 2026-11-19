@@ -8,7 +8,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/company",
   title: "Company | peaceful",
   description:
-    "Company information for peaceful Inc.: our founder, team, company profile, and recognition.",
+    "peaceful Inc.'s company profile, founder's background, and history.",
 })
 
 export default function CompanyPageEn() {
