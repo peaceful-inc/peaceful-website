@@ -92,12 +92,17 @@
 .hp-top .s2-t p{margin:0;font-size:18px;line-height:2;color:var(--pf-ink);word-break:keep-all;overflow-wrap:anywhere;text-wrap:pretty}
 .hp-top .more{align-self:flex-start;text-decoration:none;font-size:16px;letter-spacing:.04em;padding:4px 0;border-bottom:1px solid}
 
-.hp-top .facts{display:flex}
-.hp-top .fact{display:flex;flex-direction:column;gap:10px;padding:clamp(32px,3.333vw,48px) clamp(32px,5vw,72px)}
+/* ニュースの新しい3件。題は2行までで切る（全文は記事のページ） */
+.hp-top .news-h{display:flex;align-items:baseline;justify-content:space-between;gap:24px;padding-top:clamp(32px,3.333vw,48px)}
+.hp-top .news-h h2{margin:0;font-weight:500;font-size:16px;line-height:1.8;letter-spacing:.08em;color:var(--pf-warm-gray)}
+.hp-top .news-h .more{align-self:baseline}
+.hp-top .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.hp-top .fact{display:flex;flex-direction:column;gap:10px;padding:clamp(20px,2.222vw,32px) clamp(24px,3.333vw,48px) clamp(32px,3.333vw,48px);text-decoration:none}
 .hp-top .fact:first-child{padding-left:0}
+.hp-top .fact:last-child{padding-right:0}
 .hp-top .fact + .fact{border-left:1px solid rgba(156,161,165,.35)}
-.hp-top .fact .d{margin:0;font-family:'pf-fix','Shippori Mincho',serif;font-weight:600;font-size:clamp(24px,2.083vw,30px);line-height:1.3;letter-spacing:.04em;color:var(--pf-ink)}
-.hp-top .fact .t{margin:0;font-size:16px;line-height:1.8;color:var(--pf-warm-gray);word-break:auto-phrase;text-wrap:balance}
+.hp-top .fact .d{margin:0;font-family:'pf-fix','Shippori Mincho',serif;font-weight:600;font-size:clamp(24px,2.083vw,30px);line-height:1.3;letter-spacing:.04em}
+.hp-top .fact .t{margin:0;font-size:16px;line-height:1.8;color:var(--pf-warm-gray);line-break:strict;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
 
 .hp-top .idx{display:flex;flex-direction:column;padding-top:clamp(88px,12.5vw,180px);padding-bottom:clamp(96px,13.333vw,192px)}
 .hp-top .row{display:grid;grid-template-columns:minmax(0,400fr) minmax(0,848fr);column-gap:24px;align-items:baseline;padding:clamp(32px,3.333vw,48px) 0;border-top:1px solid rgba(156,161,165,.35);text-decoration:none}
@@ -119,6 +124,9 @@
 }
 @media (max-width:760px){
 .hp-top .s2{grid-template-columns:minmax(0,1fr)}
+.hp-top .facts{grid-template-columns:minmax(0,1fr)}
+.hp-top .fact{padding:28px 0}
+.hp-top .fact + .fact{border-left:0;border-top:1px solid rgba(156,161,165,.35)}
 }
 @media (max-width:600px){
 .hp-top .lang{display:none}
@@ -129,9 +137,6 @@
 .hp-top .card-r{width:48px;margin:14px 0 12px}
 .hp-top .card-d{font-size:18px}
 .hp-top .card-e{font-size:14px}
-.hp-top .facts{flex-direction:column}
-.hp-top .fact{padding:28px 0}
-.hp-top .fact + .fact{border-left:0;border-top:1px solid rgba(156,161,165,.35)}
 .hp-top .row{grid-template-columns:minmax(0,1fr);row-gap:6px}
 }
 @media (prefers-reduced-motion: reduce){.hp-top .h-bg,.hp-top .h-fg,.hp-top .pill,.hp-top .card,.hp-top .card-r,.hp-top .card-d,.hp-top .card-e{animation:none}.hp-top .armed .ln,.hp-top .armed .mission{opacity:1;transform:none;transition:none}}
