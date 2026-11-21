@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { localizePath, type Lang } from "@/lib/seo"
+import { newsData } from "@/lib/news-data"
 import HpPage from "@/components/hp/hp-page"
 import SiteHeader from "@/components/hp/site-header"
 import SiteFooter from "@/components/hp/site-footer"
@@ -126,14 +127,21 @@ export default function TopPage({ lang }: { lang: Lang }) {
         </section>
 
         <Band src="/images/hp/band-top-1.svg" />
-        <section aria-label={ja ? "これまでの事実" : "Milestones"} className="facts">
-          <div className="fact">
-            <p className="d">2026.08</p>
-            <p className="t">{ja ? "洛和会丸太町病院で実証を開始" : "Began a pilot at Rakuwakai Marutamachi Hospital"}</p>
+        {/* ニュースの一覧（lib/news-data.ts）の新しい3件。記事を足すと、ここも自動で変わる（2026-11-20 MJ の決め） */}
+        <section aria-label={ja ? "ニュース" : "News"} className="news">
+          <div className="news-h">
+            <h2>{ja ? "ニュース" : "News"}</h2>
+            <Link href={p("/news")} className="more" style={gold}>
+              {ja ? "ニュース一覧" : "All news"}
+            </Link>
           </div>
-          <div className="fact">
-            <p className="d">2026.08</p>
-            <p className="t">{ja ? "NVIDIA Inception Programに採択" : "Selected for the NVIDIA Inception Program"}</p>
+          <div className="facts">
+            {newsData.slice(0, 3).map((item) => (
+              <Link key={item.id} href={p(`/news/${item.id}`)} className="fact">
+                <span className="d">{item.date}</span>
+                <span className="t">{ja ? item.title : item.titleEn}</span>
+              </Link>
+            ))}
           </div>
         </section>
 
