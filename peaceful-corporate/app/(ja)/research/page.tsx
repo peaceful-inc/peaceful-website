@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import ParticleBackground from "@/components/particle-background"
-import ResearchContent from "@/components/research-content"
 import { pageMetadata } from "@/lib/seo"
+import Research from "@/components/hp/research"
 
 export const metadata: Metadata = pageMetadata({
   lang: "ja",
@@ -13,11 +11,5 @@ export const metadata: Metadata = pageMetadata({
 })
 
 export default function ResearchPage() {
-  return (
-    <main className="relative min-h-screen bg-background text-foreground">
-      <ParticleBackground />
-      <Header />
-      <ResearchContent />
-    </main>
-  )
+  return <Research lang="ja" />
 }

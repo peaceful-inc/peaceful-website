@@ -79,7 +79,7 @@ export const ORGANIZATION_ID = `${SITE_URL}/#organization`
 export const FOUNDER_ID = `${SITE_URL}/company#founder`
 
 const organizationDescription = {
-  ja: "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS」を開発しています。NURVISは、看護師がケアをしながら話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確かめられるようにします。",
+  ja: "株式会社peacefulは、ウェアラブルデバイスによる看護師向けAIエージェントシステム「NURVIS（ナービス）」を開発しています。NURVISは、看護師がケアをしながら話した内容を看護記録の文章に整え、看護手順や薬剤情報をその場で確かめられるようにします。",
   en: "peaceful Inc. develops NURVIS, a wearable AI agent system for nurses. It drafts nursing records from what nurses say during care and lets them check procedures and drug information on the spot.",
 }
 
@@ -129,6 +129,7 @@ export const organizationJsonLd = (lang: Lang) => ({
   brand: {
     "@type": "Brand",
     name: "NURVIS",
+    alternateName: "ナービス",
     description: "ウェアラブルデバイスによる看護師向けAIエージェントシステム",
     url: `${SITE_URL}/product`,
   },

@@ -1,0 +1,79 @@
+/* docs/design/hp-2026-10-31/pages/vision.html の CSS（.hp-vision の中だけに効く） */
+
+
+.hp-vision a{color:var(--pf-ink)}.hp-vision a:hover{color:var(--pf-gold)}
+.hp-vision.pg{--pad:clamp(20px,6.667vw,96px);width:100%;background:var(--pf-white);color:var(--pf-ink);font-family:'pf-fix','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;font-size:18px;line-height:2;letter-spacing:.04em;font-variant-numeric:lining-nums}
+.hp-vision .in{max-width:1440px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad);box-sizing:border-box}
+.hp-vision p{margin:0}
+
+.hp-vision .hd{display:flex;align-items:center;justify-content:space-between;gap:24px;height:clamp(72px,7.222vw,104px)}
+.hp-vision .hd-logo{display:flex;align-items:center}
+.hp-vision .hd-logo img{display:block;height:clamp(32px,3.333vw,48px);width:auto}
+.hp-vision .nav{display:flex;align-items:center;gap:clamp(18px,3.056vw,44px);font-size:16px;font-weight:500;letter-spacing:.08em}
+.hp-vision .nav a{text-decoration:none;padding:12px 0}
+.hp-vision .nav a.cur{padding:4px 0;border-bottom:1px solid}
+.hp-vision .lang{display:flex;align-items:center;gap:10px;font-size:14px}
+.hp-vision .nav .menu{display:none}
+.hp-vision .nav .contact{padding:4px 0;border-bottom:1px solid}
+
+.hp-vision .head{padding-top:clamp(64px,8.333vw,120px)}
+.hp-vision .ttl{margin:0;font-weight:600;font-size:clamp(30px,5vw,72px);line-height:1.5;letter-spacing:.04em}
+.hp-vision .ttl .ln{display:block;word-break:auto-phrase;text-wrap:balance}
+.hp-vision .sub{margin:clamp(28px,3.333vw,48px) 0 0;font-size:clamp(16px,1.389vw,20px);line-height:1.8;letter-spacing:.08em;color:var(--pf-warm-gray);word-break:auto-phrase;text-wrap:balance}
+
+.hp-vision .sec{padding-top:clamp(88px,12.5vw,180px)}
+.hp-vision .two{display:grid;grid-template-columns:minmax(0,400fr) minmax(0,848fr);column-gap:24px;row-gap:20px;align-items:baseline}
+.hp-vision .sec-h{display:flex;flex-direction:column;gap:6px}
+.hp-vision .sec-h h2{margin:0;font-weight:600;font-size:clamp(26px,2.5vw,36px);line-height:1.4;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-vision .sec-h span{font-size:13px;letter-spacing:.24em;color:var(--pf-warm-gray)}
+.hp-vision .sec-h.row-h{flex-direction:column;align-items:flex-start;gap:6px;margin-bottom:clamp(32px,3.889vw,56px)}
+.hp-vision .body-p{max-width:40em;text-wrap:pretty}
+
+.hp-vision .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(24px,3.333vw,48px);row-gap:40px}
+.hp-vision .col{display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:1px solid rgba(156,161,165,.45)}
+.hp-vision .col .no{font-size:15px;letter-spacing:.12em;color:var(--pf-warm-gray)}
+.hp-vision .col h3{margin:0;font-weight:600;font-size:clamp(21px,1.806vw,26px);line-height:1.5;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-vision .col p{font-size:17px;line-height:2;color:var(--pf-ink);text-wrap:pretty;word-break:auto-phrase;text-wrap:pretty}
+.hp-vision .col .more{align-self:flex-start;margin-top:6px;text-decoration:none;font-size:15px;letter-spacing:.04em;padding:2px 0;border-bottom:1px solid;white-space:nowrap}
+
+.hp-vision .loop{display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1fr) 40px minmax(0,1fr);column-gap:clamp(12px,1.667vw,24px);align-items:start}
+.hp-vision .lp{display:flex;flex-direction:column;gap:14px;padding-top:24px;border-top:1px solid rgba(156,161,165,.45)}
+.hp-vision .lp .no{font-size:15px;letter-spacing:.12em;color:var(--pf-warm-gray)}
+.hp-vision .lp h3{margin:0;font-weight:600;font-size:clamp(21px,1.806vw,26px);line-height:1.5;letter-spacing:.04em;word-break:auto-phrase;text-wrap:balance}
+.hp-vision .lp p{font-size:17px;line-height:2;color:var(--pf-ink);text-wrap:pretty;word-break:auto-phrase;text-wrap:pretty}
+.hp-vision .arw{align-self:center;text-align:center;font-size:22px;color:var(--pf-gray)}
+.hp-vision .back{margin-top:clamp(20px,2.222vw,32px);display:flex;align-items:center;gap:16px;font-size:16px;color:var(--pf-warm-gray)}
+.hp-vision .back i{flex:1;height:1px;max-width:240px;font-style:normal}
+
+.hp-vision .end{padding-bottom:clamp(96px,13.333vw,192px)}
+
+.hp-vision .ft{display:flex;flex-direction:column;gap:28px;padding:clamp(40px,3.889vw,56px) 0 clamp(44px,4.444vw,64px)}
+.hp-vision .ft-a{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px 48px}
+.hp-vision .ft-a img{display:block;height:26px;width:auto}
+.hp-vision .ft-nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px 32px;font-size:14px}
+.hp-vision .ft-nav a{text-decoration:none;padding:8px 0;color:var(--pf-warm-gray)}
+.hp-vision .ft-b{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 48px;font-size:14px;color:var(--pf-warm-gray)}
+
+@media (max-width:1024px){
+.hp-vision .cols{grid-template-columns:minmax(0,1fr)}
+.hp-vision .loop{grid-template-columns:minmax(0,1fr);row-gap:12px}
+.hp-vision .arw{transform:rotate(90deg)}
+}
+@media (max-width:860px){
+.hp-vision .nav .pl{display:none}
+.hp-vision .nav .menu{display:inline}
+}
+@media (max-width:760px){
+.hp-vision .two{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:600px){
+.hp-vision .lang{display:none}
+}
+.hp-vision .col p.kp{word-break:keep-all;overflow-wrap:anywhere;}
+.hp-vision .ttl-e{margin:clamp(12px,1.111vw,16px) 0 0;font-size:clamp(15px,1.25vw,18px);line-height:1.6;letter-spacing:.02em;color:var(--pf-warm-gray)}
+.hp-vision .sec-h .h-e{margin:0;font-size:clamp(15px,1.25vw,18px);line-height:1.6;letter-spacing:.02em;color:var(--pf-warm-gray)}
+.hp-vision .bandw{line-height:0}
+.hp-vision .band{display:block;width:100%;height:32px}
+.hp-vision .bh{margin-top:clamp(48px,5.556vw,80px)}
+@media (max-width:600px){.hp-vision .band{height:24px}}
+.hp-vision .giga{margin-top:clamp(40px,4.444vw,64px)}.hp-vision .giga svg{display:block;width:100%;height:auto;margin:0 auto;overflow:visible}.hp-vision .giga .g-w{max-width:1040px}.hp-vision .giga .g-n{display:none;max-width:460px}@media (max-width:1024px){.hp-vision .giga .g-w{display:none}.hp-vision .giga .g-n{display:block}}.hp-vision .giga .sp{stroke:var(--pf-gold);stroke-width:1.4;vector-effect:non-scaling-stroke}.hp-vision .giga .hub{fill:var(--pf-white);stroke:var(--pf-gold);stroke-width:1.4;vector-effect:non-scaling-stroke}.hp-vision .giga text{font-family:'pf-fix','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif;font-weight:500;letter-spacing:.04em;fill:var(--pf-ink);paint-order:stroke;stroke:var(--pf-white);stroke-width:5px;stroke-linejoin:round}.hp-vision .giga .hub-t{font-weight:600;stroke:none}.hp-vision .giga .glow{transform-box:fill-box;transform-origin:center;animation:gPulse-vision 3.6s ease-in-out infinite}.hp-vision .giga .gh{animation-duration:5.4s}.hp-vision .giga .g2{animation-delay:.7s}.hp-vision .giga .g3{animation-delay:1.4s}.hp-vision .giga .g4{animation-delay:2.1s}.hp-vision .giga .g5{animation-delay:2.8s}@keyframes gPulse-vision{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}@media (prefers-reduced-motion: reduce){.hp-vision .giga .glow{animation:none}}

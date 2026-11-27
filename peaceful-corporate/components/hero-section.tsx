@@ -69,9 +69,18 @@ export default function HeroSection() {
                 : "Reconstructing sustainable healthcare infrastructure with AI & Robotics."}
             </p>
             <p className="text-lg md:text-xl tracking-widest mt-1">
-              {lang === "ja"
-                ? "看護師向けAIエージェント \"NURVIS\""
-                : "AI Agent for Nurses: NURVIS"}
+              {lang === "ja" ? (
+                <>
+                  看護師向けAIエージェント &quot;
+                  <ruby>
+                    NURVIS
+                    <rt className="text-[0.6em] font-normal tracking-[0.1em]" style={{ rubyAlign: "center" }}>ナービス</rt>
+                  </ruby>
+                  &quot;
+                </>
+              ) : (
+                "AI Agent for Nurses: NURVIS"
+              )}
             </p>
           </div>
         </div>

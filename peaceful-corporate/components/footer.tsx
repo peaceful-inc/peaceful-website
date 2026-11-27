@@ -43,15 +43,15 @@ export default function Footer() {
                     <ul className="space-y-2 text-sm text-foreground/60">
                         {lang === 'ja' ? (
                             <>
-                                <li>医療・介護向けAIシステムの開発</li>
-                                <li>医療ロボティクス研究開発</li>
-                                <li>医療DXコンサルティング</li>
+                                <li>医療・介護の現場で働くロボットのAI（フィジカルAI）の研究開発</li>
+                                <li>医療・介護向けAIエージェントシステムの開発・提供（NURVIS）</li>
+                                <li>病院・介護施設のDXの導入と運用の支援</li>
                             </>
                         ) : (
                             <>
-                                <li>AI System Development for Medical & Nursing Care</li>
-                                <li>Medical Robotics R&D</li>
-                                <li>Medical DX Consulting</li>
+                                <li>Physical AI R&D for Healthcare &amp; Nursing Care Robots</li>
+                                <li>AI Agent Systems for Healthcare &amp; Nursing Care (NURVIS)</li>
+                                <li>DX Implementation &amp; Operations Support for Hospitals &amp; Care Facilities</li>
                             </>
                         )}
                     </ul>

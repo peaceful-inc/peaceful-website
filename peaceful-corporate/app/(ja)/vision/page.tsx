@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
-import Header from "@/components/header"
-import ParticleBackground from "@/components/particle-background"
-import VisionContent from "@/components/vision-content"
 import { pageMetadata } from "@/lib/seo"
+import Vision from "@/components/hp/vision"
 
 export const metadata: Metadata = pageMetadata({
   lang: "ja",
@@ -13,11 +11,5 @@ export const metadata: Metadata = pageMetadata({
 })
 
 export default function VisionPage() {
-  return (
-    <main className="relative min-h-screen bg-background text-foreground">
-      <ParticleBackground />
-      <Header />
-      <VisionContent />
-    </main>
-  )
+  return <Vision lang="ja" />
 }

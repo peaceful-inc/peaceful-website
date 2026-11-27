@@ -184,9 +184,19 @@ export default function CompanyContent() {
                 {lang === "ja" ? "事業内容" : "Business"}
               </dt>
               <dd className="text-lg text-foreground/90 md:text-xl">
-                {lang === "ja"
-                  ? "医療・介護向けAIシステムの開発／医療ロボティクス研究開発／医療DXコンサルティング"
-                  : "Development of AI systems for healthcare and nursing care / Research and development of medical robotics / Healthcare DX consulting"}
+                {lang === "ja" ? (
+                  <ul className="space-y-1">
+                    <li>医療・介護の現場で働くロボットのAI（フィジカルAI）の研究開発</li>
+                    <li>医療・介護向けAIエージェントシステムの開発・提供（NURVIS）</li>
+                    <li>病院・介護施設のDXの導入と運用の支援</li>
+                  </ul>
+                ) : (
+                  <ul className="space-y-1">
+                    <li>Research and development of AI for robots working in healthcare and nursing care (physical AI)</li>
+                    <li>Development and provision of AI agent systems for healthcare and nursing care (NURVIS)</li>
+                    <li>Support for DX implementation and operations at hospitals and care facilities</li>
+                  </ul>
+                )}
               </dd>
             </div>
             <div className="group">
