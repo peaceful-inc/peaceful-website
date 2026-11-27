@@ -15,3 +15,9 @@ MJの承認が必要なのは、患者情報を新しくAIや外部に送る変�
 - 詳細は[承認とマージの手順](docs/runbook/mj-approval-and-auto-merge.md)を参照してください。
 
 MJの2026-10-28 22:04の追記により、AGENTS.md・CLAUDE.md・.github全体・review rules/policyはCODEOWNERSでMJの承認対象にします。 NURVISのプライバシーページ（peaceful-corporate/app/**/nurvis/privacy/）も対象です。 詳細は上記の手順書に従います。
+
+## Web の手引き
+
+- 画面のコード（peaceful-corporate の app・components・styles など）を変える時は、docs/web-guidance/ の当てはまる手引きを先に読んでから書く。どれが当てはまるかは docs/web-guidance/README.md の一覧を見る
+- Baseline の目標は、手引きの既定の Baseline Widely available とする。それより新しい機能を使う時は、手引きにある代わりの書き方に従う
+- 手引きの文は書き換えない。手引きの中の npx・npm の命令やプラグインの入れ方は動かさない・入れない
