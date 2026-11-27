@@ -475,6 +475,37 @@ const rawNewsData: NewsItem[] = [
       </p>
     `,
   },
+  {
+    id: "16",
+    title: "本店移転のお知らせ",
+    titleEn: "Notice of Head Office Relocation",
+    date: "2026.11.25",
+    category: "Corporate",
+    content: `
+      <p class="mb-6">
+        株式会社peacefulは、2026年10月1日付で本店を下記へ移転いたしました。
+      </p>
+      <p class="mb-6">
+        新しい本店所在地<br>
+        〒140-0002 東京都品川区東品川2-6-4 寺田倉庫G1ビル2階
+      </p>
+      <p>
+        今後とも変わらぬご支援を賜りますよう、よろしくお願い申し上げます。
+      </p>
+    `,
+    contentEn: `
+      <p class="mb-6">
+        peaceful inc. relocated its head office to the address below on October 1, 2026.
+      </p>
+      <p class="mb-6">
+        New head office address<br>
+        Warehouse TERRADA G1 Bldg. 2F, 2-6-4 Higashi-Shinagawa, Shinagawa-ku, Tokyo 140-0002, Japan
+      </p>
+      <p>
+        We look forward to your continued support.
+      </p>
+    `,
+  },
 ];
 
 export const newsData = rawNewsData.sort((a, b) => b.date.localeCompare(a.date));
